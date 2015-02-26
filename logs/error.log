@@ -1,0 +1,1936 @@
+2015-02-24 02:21:25 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Test could not be found.
+Exception Attributes: array (
+  'class' => 'Test',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /CakeTeaster/test
+Stack Trace:
+#0 /var/www/CakeTeaster/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-02-24 03:11:44 Error: [InvalidArgumentException] Cannot find route class test
+Request URL: /CakeTeaster/test
+Stack Trace:
+#0 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Routing/RouteBuilder.php(391): Cake\Routing\RouteBuilder->_makeRoute('/:controller', Array, Array)
+#1 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Routing/RouteBuilder.php(594): Cake\Routing\RouteBuilder->connect('/:controller', Array, Array)
+#2 /var/www/CakeTeaster/plugins/CakeTeaster/config/routes.php(5): Cake\Routing\RouteBuilder->fallbacks('test')
+#3 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Routing/RouteBuilder.php(579): Cake\Core\Plugin::{closure}(Object(Cake\Routing\RouteBuilder))
+#4 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Routing/Router.php(870): Cake\Routing\RouteBuilder->scope('/cake_teaster', Array, Object(Closure))
+#5 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Routing/Router.php(926): Cake\Routing\Router::scope('/cake_teaster', Array, Object(Closure))
+#6 /var/www/CakeTeaster/plugins/CakeTeaster/config/routes.php(6): Cake\Routing\Router::plugin('CakeTeaster', Object(Closure))
+#7 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Core/Plugin.php(389): include('/var/www/CakeTe...')
+#8 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Core/Plugin.php(341): Cake\Core\Plugin::_includeFile('/var/www/CakeTe...', false)
+#9 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Core/Plugin.php(330): Cake\Core\Plugin::routes('CakeTeaster')
+#10 /var/www/CakeTeaster/config/routes.php(80): Cake\Core\Plugin::routes()
+#11 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Routing/Router.php(947): include('/var/www/CakeTe...')
+#12 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Routing/Router.php(327): Cake\Routing\Router::_loadRoutes()
+#13 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Routing/Filter/RoutingFilter.php(53): Cake\Routing\Router::parse('test')
+#14 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Routing/DispatcherFilter.php(145): Cake\Routing\Filter\RoutingFilter->beforeDispatch(Object(Cake\Event\Event))
+#15 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Event/EventManager.php(380): Cake\Routing\DispatcherFilter->handle(Object(Cake\Event\Event), Object(Cake\Network\Request), Object(Cake\Network\Response))
+#16 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Event/EventManager.php(346): Cake\Event\EventManager->_callListener(Array, Object(Cake\Event\Event))
+#17 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Event/EventManagerTrait.php(78): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#18 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(62): Cake\Routing\Dispatcher->dispatchEvent('Dispatcher.befo...', Array)
+#19 /var/www/CakeTeaster/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#20 {main}
+
+
+2015-02-24 03:11:44 Error: [InvalidArgumentException] Cannot find route class test
+Request URL: /CakeTeaster/debug_kit/toolbar/d13dc374-e224-44ab-94f5-c62e3845e769
+Stack Trace:
+#0 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Routing/RouteBuilder.php(391): Cake\Routing\RouteBuilder->_makeRoute('/:controller', Array, Array)
+#1 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Routing/RouteBuilder.php(594): Cake\Routing\RouteBuilder->connect('/:controller', Array, Array)
+#2 /var/www/CakeTeaster/plugins/CakeTeaster/config/routes.php(5): Cake\Routing\RouteBuilder->fallbacks('test')
+#3 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Routing/RouteBuilder.php(579): Cake\Core\Plugin::{closure}(Object(Cake\Routing\RouteBuilder))
+#4 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Routing/Router.php(870): Cake\Routing\RouteBuilder->scope('/cake_teaster', Array, Object(Closure))
+#5 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Routing/Router.php(926): Cake\Routing\Router::scope('/cake_teaster', Array, Object(Closure))
+#6 /var/www/CakeTeaster/plugins/CakeTeaster/config/routes.php(6): Cake\Routing\Router::plugin('CakeTeaster', Object(Closure))
+#7 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Core/Plugin.php(389): include('/var/www/CakeTe...')
+#8 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Core/Plugin.php(341): Cake\Core\Plugin::_includeFile('/var/www/CakeTe...', false)
+#9 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Core/Plugin.php(330): Cake\Core\Plugin::routes('CakeTeaster')
+#10 /var/www/CakeTeaster/config/routes.php(80): Cake\Core\Plugin::routes()
+#11 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Routing/Router.php(947): include('/var/www/CakeTe...')
+#12 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Routing/Router.php(327): Cake\Routing\Router::_loadRoutes()
+#13 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Routing/Filter/RoutingFilter.php(53): Cake\Routing\Router::parse('debug_kit/toolb...')
+#14 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Routing/DispatcherFilter.php(145): Cake\Routing\Filter\RoutingFilter->beforeDispatch(Object(Cake\Event\Event))
+#15 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Event/EventManager.php(380): Cake\Routing\DispatcherFilter->handle(Object(Cake\Event\Event), Object(Cake\Network\Request), Object(Cake\Network\Response))
+#16 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Event/EventManager.php(346): Cake\Event\EventManager->_callListener(Array, Object(Cake\Event\Event))
+#17 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Event/EventManagerTrait.php(78): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#18 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(62): Cake\Routing\Dispatcher->dispatchEvent('Dispatcher.befo...', Array)
+#19 /var/www/CakeTeaster/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#20 {main}
+
+
+2015-02-24 03:11:45 Error: [InvalidArgumentException] Cannot find route class test
+Request URL: /CakeTeaster/debug_kit/toolbar/ed200545-62e5-41d9-9f61-4b2fbf73c885
+Stack Trace:
+#0 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Routing/RouteBuilder.php(391): Cake\Routing\RouteBuilder->_makeRoute('/:controller', Array, Array)
+#1 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Routing/RouteBuilder.php(594): Cake\Routing\RouteBuilder->connect('/:controller', Array, Array)
+#2 /var/www/CakeTeaster/plugins/CakeTeaster/config/routes.php(5): Cake\Routing\RouteBuilder->fallbacks('test')
+#3 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Routing/RouteBuilder.php(579): Cake\Core\Plugin::{closure}(Object(Cake\Routing\RouteBuilder))
+#4 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Routing/Router.php(870): Cake\Routing\RouteBuilder->scope('/cake_teaster', Array, Object(Closure))
+#5 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Routing/Router.php(926): Cake\Routing\Router::scope('/cake_teaster', Array, Object(Closure))
+#6 /var/www/CakeTeaster/plugins/CakeTeaster/config/routes.php(6): Cake\Routing\Router::plugin('CakeTeaster', Object(Closure))
+#7 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Core/Plugin.php(389): include('/var/www/CakeTe...')
+#8 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Core/Plugin.php(341): Cake\Core\Plugin::_includeFile('/var/www/CakeTe...', false)
+#9 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Core/Plugin.php(330): Cake\Core\Plugin::routes('CakeTeaster')
+#10 /var/www/CakeTeaster/config/routes.php(80): Cake\Core\Plugin::routes()
+#11 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Routing/Router.php(947): include('/var/www/CakeTe...')
+#12 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Routing/Router.php(327): Cake\Routing\Router::_loadRoutes()
+#13 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Routing/Filter/RoutingFilter.php(53): Cake\Routing\Router::parse('debug_kit/toolb...')
+#14 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Routing/DispatcherFilter.php(145): Cake\Routing\Filter\RoutingFilter->beforeDispatch(Object(Cake\Event\Event))
+#15 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Event/EventManager.php(380): Cake\Routing\DispatcherFilter->handle(Object(Cake\Event\Event), Object(Cake\Network\Request), Object(Cake\Network\Response))
+#16 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Event/EventManager.php(346): Cake\Event\EventManager->_callListener(Array, Object(Cake\Event\Event))
+#17 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Event/EventManagerTrait.php(78): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#18 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(62): Cake\Routing\Dispatcher->dispatchEvent('Dispatcher.befo...', Array)
+#19 /var/www/CakeTeaster/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#20 {main}
+
+
+2015-02-24 03:11:45 Error: [InvalidArgumentException] Cannot find route class test
+Request URL: /CakeTeaster/debug_kit/toolbar/0eb2e376-7bb8-499c-8bbb-e952c874cf2e
+Stack Trace:
+#0 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Routing/RouteBuilder.php(391): Cake\Routing\RouteBuilder->_makeRoute('/:controller', Array, Array)
+#1 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Routing/RouteBuilder.php(594): Cake\Routing\RouteBuilder->connect('/:controller', Array, Array)
+#2 /var/www/CakeTeaster/plugins/CakeTeaster/config/routes.php(5): Cake\Routing\RouteBuilder->fallbacks('test')
+#3 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Routing/RouteBuilder.php(579): Cake\Core\Plugin::{closure}(Object(Cake\Routing\RouteBuilder))
+#4 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Routing/Router.php(870): Cake\Routing\RouteBuilder->scope('/cake_teaster', Array, Object(Closure))
+#5 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Routing/Router.php(926): Cake\Routing\Router::scope('/cake_teaster', Array, Object(Closure))
+#6 /var/www/CakeTeaster/plugins/CakeTeaster/config/routes.php(6): Cake\Routing\Router::plugin('CakeTeaster', Object(Closure))
+#7 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Core/Plugin.php(389): include('/var/www/CakeTe...')
+#8 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Core/Plugin.php(341): Cake\Core\Plugin::_includeFile('/var/www/CakeTe...', false)
+#9 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Core/Plugin.php(330): Cake\Core\Plugin::routes('CakeTeaster')
+#10 /var/www/CakeTeaster/config/routes.php(80): Cake\Core\Plugin::routes()
+#11 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Routing/Router.php(947): include('/var/www/CakeTe...')
+#12 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Routing/Router.php(327): Cake\Routing\Router::_loadRoutes()
+#13 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Routing/Filter/RoutingFilter.php(53): Cake\Routing\Router::parse('debug_kit/toolb...')
+#14 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Routing/DispatcherFilter.php(145): Cake\Routing\Filter\RoutingFilter->beforeDispatch(Object(Cake\Event\Event))
+#15 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Event/EventManager.php(380): Cake\Routing\DispatcherFilter->handle(Object(Cake\Event\Event), Object(Cake\Network\Request), Object(Cake\Network\Response))
+#16 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Event/EventManager.php(346): Cake\Event\EventManager->_callListener(Array, Object(Cake\Event\Event))
+#17 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Event/EventManagerTrait.php(78): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#18 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(62): Cake\Routing\Dispatcher->dispatchEvent('Dispatcher.befo...', Array)
+#19 /var/www/CakeTeaster/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#20 {main}
+
+
+2015-02-24 03:11:46 Error: [InvalidArgumentException] Cannot find route class test
+Request URL: /CakeTeaster/debug_kit/toolbar/bee74764-cf67-488c-9a4c-3acd53a55d15
+Stack Trace:
+#0 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Routing/RouteBuilder.php(391): Cake\Routing\RouteBuilder->_makeRoute('/:controller', Array, Array)
+#1 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Routing/RouteBuilder.php(594): Cake\Routing\RouteBuilder->connect('/:controller', Array, Array)
+#2 /var/www/CakeTeaster/plugins/CakeTeaster/config/routes.php(5): Cake\Routing\RouteBuilder->fallbacks('test')
+#3 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Routing/RouteBuilder.php(579): Cake\Core\Plugin::{closure}(Object(Cake\Routing\RouteBuilder))
+#4 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Routing/Router.php(870): Cake\Routing\RouteBuilder->scope('/cake_teaster', Array, Object(Closure))
+#5 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Routing/Router.php(926): Cake\Routing\Router::scope('/cake_teaster', Array, Object(Closure))
+#6 /var/www/CakeTeaster/plugins/CakeTeaster/config/routes.php(6): Cake\Routing\Router::plugin('CakeTeaster', Object(Closure))
+#7 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Core/Plugin.php(389): include('/var/www/CakeTe...')
+#8 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Core/Plugin.php(341): Cake\Core\Plugin::_includeFile('/var/www/CakeTe...', false)
+#9 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Core/Plugin.php(330): Cake\Core\Plugin::routes('CakeTeaster')
+#10 /var/www/CakeTeaster/config/routes.php(80): Cake\Core\Plugin::routes()
+#11 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Routing/Router.php(947): include('/var/www/CakeTe...')
+#12 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Routing/Router.php(327): Cake\Routing\Router::_loadRoutes()
+#13 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Routing/Filter/RoutingFilter.php(53): Cake\Routing\Router::parse('debug_kit/toolb...')
+#14 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Routing/DispatcherFilter.php(145): Cake\Routing\Filter\RoutingFilter->beforeDispatch(Object(Cake\Event\Event))
+#15 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Event/EventManager.php(380): Cake\Routing\DispatcherFilter->handle(Object(Cake\Event\Event), Object(Cake\Network\Request), Object(Cake\Network\Response))
+#16 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Event/EventManager.php(346): Cake\Event\EventManager->_callListener(Array, Object(Cake\Event\Event))
+#17 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Event/EventManagerTrait.php(78): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#18 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(62): Cake\Routing\Dispatcher->dispatchEvent('Dispatcher.befo...', Array)
+#19 /var/www/CakeTeaster/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#20 {main}
+
+
+2015-02-24 03:11:46 Error: [InvalidArgumentException] Cannot find route class test
+Request URL: /CakeTeaster/debug_kit/toolbar/f8f318a8-4a21-4454-86dd-462c4339d158
+Stack Trace:
+#0 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Routing/RouteBuilder.php(391): Cake\Routing\RouteBuilder->_makeRoute('/:controller', Array, Array)
+#1 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Routing/RouteBuilder.php(594): Cake\Routing\RouteBuilder->connect('/:controller', Array, Array)
+#2 /var/www/CakeTeaster/plugins/CakeTeaster/config/routes.php(5): Cake\Routing\RouteBuilder->fallbacks('test')
+#3 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Routing/RouteBuilder.php(579): Cake\Core\Plugin::{closure}(Object(Cake\Routing\RouteBuilder))
+#4 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Routing/Router.php(870): Cake\Routing\RouteBuilder->scope('/cake_teaster', Array, Object(Closure))
+#5 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Routing/Router.php(926): Cake\Routing\Router::scope('/cake_teaster', Array, Object(Closure))
+#6 /var/www/CakeTeaster/plugins/CakeTeaster/config/routes.php(6): Cake\Routing\Router::plugin('CakeTeaster', Object(Closure))
+#7 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Core/Plugin.php(389): include('/var/www/CakeTe...')
+#8 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Core/Plugin.php(341): Cake\Core\Plugin::_includeFile('/var/www/CakeTe...', false)
+#9 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Core/Plugin.php(330): Cake\Core\Plugin::routes('CakeTeaster')
+#10 /var/www/CakeTeaster/config/routes.php(80): Cake\Core\Plugin::routes()
+#11 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Routing/Router.php(947): include('/var/www/CakeTe...')
+#12 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Routing/Router.php(327): Cake\Routing\Router::_loadRoutes()
+#13 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Routing/Filter/RoutingFilter.php(53): Cake\Routing\Router::parse('debug_kit/toolb...')
+#14 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Routing/DispatcherFilter.php(145): Cake\Routing\Filter\RoutingFilter->beforeDispatch(Object(Cake\Event\Event))
+#15 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Event/EventManager.php(380): Cake\Routing\DispatcherFilter->handle(Object(Cake\Event\Event), Object(Cake\Network\Request), Object(Cake\Network\Response))
+#16 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Event/EventManager.php(346): Cake\Event\EventManager->_callListener(Array, Object(Cake\Event\Event))
+#17 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Event/EventManagerTrait.php(78): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#18 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(62): Cake\Routing\Dispatcher->dispatchEvent('Dispatcher.befo...', Array)
+#19 /var/www/CakeTeaster/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#20 {main}
+
+
+2015-02-24 03:11:47 Error: [InvalidArgumentException] Cannot find route class test
+Request URL: /CakeTeaster/debug_kit/toolbar/b6aefda1-7ffc-4c98-93df-9364a82dc22a
+Stack Trace:
+#0 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Routing/RouteBuilder.php(391): Cake\Routing\RouteBuilder->_makeRoute('/:controller', Array, Array)
+#1 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Routing/RouteBuilder.php(594): Cake\Routing\RouteBuilder->connect('/:controller', Array, Array)
+#2 /var/www/CakeTeaster/plugins/CakeTeaster/config/routes.php(5): Cake\Routing\RouteBuilder->fallbacks('test')
+#3 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Routing/RouteBuilder.php(579): Cake\Core\Plugin::{closure}(Object(Cake\Routing\RouteBuilder))
+#4 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Routing/Router.php(870): Cake\Routing\RouteBuilder->scope('/cake_teaster', Array, Object(Closure))
+#5 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Routing/Router.php(926): Cake\Routing\Router::scope('/cake_teaster', Array, Object(Closure))
+#6 /var/www/CakeTeaster/plugins/CakeTeaster/config/routes.php(6): Cake\Routing\Router::plugin('CakeTeaster', Object(Closure))
+#7 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Core/Plugin.php(389): include('/var/www/CakeTe...')
+#8 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Core/Plugin.php(341): Cake\Core\Plugin::_includeFile('/var/www/CakeTe...', false)
+#9 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Core/Plugin.php(330): Cake\Core\Plugin::routes('CakeTeaster')
+#10 /var/www/CakeTeaster/config/routes.php(80): Cake\Core\Plugin::routes()
+#11 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Routing/Router.php(947): include('/var/www/CakeTe...')
+#12 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Routing/Router.php(327): Cake\Routing\Router::_loadRoutes()
+#13 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Routing/Filter/RoutingFilter.php(53): Cake\Routing\Router::parse('debug_kit/toolb...')
+#14 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Routing/DispatcherFilter.php(145): Cake\Routing\Filter\RoutingFilter->beforeDispatch(Object(Cake\Event\Event))
+#15 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Event/EventManager.php(380): Cake\Routing\DispatcherFilter->handle(Object(Cake\Event\Event), Object(Cake\Network\Request), Object(Cake\Network\Response))
+#16 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Event/EventManager.php(346): Cake\Event\EventManager->_callListener(Array, Object(Cake\Event\Event))
+#17 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Event/EventManagerTrait.php(78): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#18 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(62): Cake\Routing\Dispatcher->dispatchEvent('Dispatcher.befo...', Array)
+#19 /var/www/CakeTeaster/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#20 {main}
+
+
+2015-02-24 03:11:48 Error: [InvalidArgumentException] Cannot find route class test
+Request URL: /CakeTeaster/debug_kit/toolbar/bbe05db3-50a3-4dad-9bda-29c66aa1a206
+Stack Trace:
+#0 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Routing/RouteBuilder.php(391): Cake\Routing\RouteBuilder->_makeRoute('/:controller', Array, Array)
+#1 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Routing/RouteBuilder.php(594): Cake\Routing\RouteBuilder->connect('/:controller', Array, Array)
+#2 /var/www/CakeTeaster/plugins/CakeTeaster/config/routes.php(5): Cake\Routing\RouteBuilder->fallbacks('test')
+#3 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Routing/RouteBuilder.php(579): Cake\Core\Plugin::{closure}(Object(Cake\Routing\RouteBuilder))
+#4 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Routing/Router.php(870): Cake\Routing\RouteBuilder->scope('/cake_teaster', Array, Object(Closure))
+#5 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Routing/Router.php(926): Cake\Routing\Router::scope('/cake_teaster', Array, Object(Closure))
+#6 /var/www/CakeTeaster/plugins/CakeTeaster/config/routes.php(6): Cake\Routing\Router::plugin('CakeTeaster', Object(Closure))
+#7 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Core/Plugin.php(389): include('/var/www/CakeTe...')
+#8 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Core/Plugin.php(341): Cake\Core\Plugin::_includeFile('/var/www/CakeTe...', false)
+#9 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Core/Plugin.php(330): Cake\Core\Plugin::routes('CakeTeaster')
+#10 /var/www/CakeTeaster/config/routes.php(80): Cake\Core\Plugin::routes()
+#11 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Routing/Router.php(947): include('/var/www/CakeTe...')
+#12 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Routing/Router.php(327): Cake\Routing\Router::_loadRoutes()
+#13 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Routing/Filter/RoutingFilter.php(53): Cake\Routing\Router::parse('debug_kit/toolb...')
+#14 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Routing/DispatcherFilter.php(145): Cake\Routing\Filter\RoutingFilter->beforeDispatch(Object(Cake\Event\Event))
+#15 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Event/EventManager.php(380): Cake\Routing\DispatcherFilter->handle(Object(Cake\Event\Event), Object(Cake\Network\Request), Object(Cake\Network\Response))
+#16 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Event/EventManager.php(346): Cake\Event\EventManager->_callListener(Array, Object(Cake\Event\Event))
+#17 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Event/EventManagerTrait.php(78): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#18 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(62): Cake\Routing\Dispatcher->dispatchEvent('Dispatcher.befo...', Array)
+#19 /var/www/CakeTeaster/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#20 {main}
+
+
+2015-02-24 03:11:48 Error: [InvalidArgumentException] Cannot find route class test
+Request URL: /CakeTeaster/debug_kit/toolbar/88bb849a-92a6-412a-b374-b593dd34cb09
+Stack Trace:
+#0 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Routing/RouteBuilder.php(391): Cake\Routing\RouteBuilder->_makeRoute('/:controller', Array, Array)
+#1 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Routing/RouteBuilder.php(594): Cake\Routing\RouteBuilder->connect('/:controller', Array, Array)
+#2 /var/www/CakeTeaster/plugins/CakeTeaster/config/routes.php(5): Cake\Routing\RouteBuilder->fallbacks('test')
+#3 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Routing/RouteBuilder.php(579): Cake\Core\Plugin::{closure}(Object(Cake\Routing\RouteBuilder))
+#4 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Routing/Router.php(870): Cake\Routing\RouteBuilder->scope('/cake_teaster', Array, Object(Closure))
+#5 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Routing/Router.php(926): Cake\Routing\Router::scope('/cake_teaster', Array, Object(Closure))
+#6 /var/www/CakeTeaster/plugins/CakeTeaster/config/routes.php(6): Cake\Routing\Router::plugin('CakeTeaster', Object(Closure))
+#7 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Core/Plugin.php(389): include('/var/www/CakeTe...')
+#8 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Core/Plugin.php(341): Cake\Core\Plugin::_includeFile('/var/www/CakeTe...', false)
+#9 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Core/Plugin.php(330): Cake\Core\Plugin::routes('CakeTeaster')
+#10 /var/www/CakeTeaster/config/routes.php(80): Cake\Core\Plugin::routes()
+#11 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Routing/Router.php(947): include('/var/www/CakeTe...')
+#12 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Routing/Router.php(327): Cake\Routing\Router::_loadRoutes()
+#13 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Routing/Filter/RoutingFilter.php(53): Cake\Routing\Router::parse('debug_kit/toolb...')
+#14 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Routing/DispatcherFilter.php(145): Cake\Routing\Filter\RoutingFilter->beforeDispatch(Object(Cake\Event\Event))
+#15 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Event/EventManager.php(380): Cake\Routing\DispatcherFilter->handle(Object(Cake\Event\Event), Object(Cake\Network\Request), Object(Cake\Network\Response))
+#16 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Event/EventManager.php(346): Cake\Event\EventManager->_callListener(Array, Object(Cake\Event\Event))
+#17 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Event/EventManagerTrait.php(78): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#18 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(62): Cake\Routing\Dispatcher->dispatchEvent('Dispatcher.befo...', Array)
+#19 /var/www/CakeTeaster/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#20 {main}
+
+
+2015-02-24 03:11:49 Error: [InvalidArgumentException] Cannot find route class test
+Request URL: /CakeTeaster/debug_kit/toolbar/d9f285df-25e4-4fb0-8512-f7e0bfc219f2
+Stack Trace:
+#0 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Routing/RouteBuilder.php(391): Cake\Routing\RouteBuilder->_makeRoute('/:controller', Array, Array)
+#1 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Routing/RouteBuilder.php(594): Cake\Routing\RouteBuilder->connect('/:controller', Array, Array)
+#2 /var/www/CakeTeaster/plugins/CakeTeaster/config/routes.php(5): Cake\Routing\RouteBuilder->fallbacks('test')
+#3 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Routing/RouteBuilder.php(579): Cake\Core\Plugin::{closure}(Object(Cake\Routing\RouteBuilder))
+#4 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Routing/Router.php(870): Cake\Routing\RouteBuilder->scope('/cake_teaster', Array, Object(Closure))
+#5 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Routing/Router.php(926): Cake\Routing\Router::scope('/cake_teaster', Array, Object(Closure))
+#6 /var/www/CakeTeaster/plugins/CakeTeaster/config/routes.php(6): Cake\Routing\Router::plugin('CakeTeaster', Object(Closure))
+#7 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Core/Plugin.php(389): include('/var/www/CakeTe...')
+#8 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Core/Plugin.php(341): Cake\Core\Plugin::_includeFile('/var/www/CakeTe...', false)
+#9 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Core/Plugin.php(330): Cake\Core\Plugin::routes('CakeTeaster')
+#10 /var/www/CakeTeaster/config/routes.php(80): Cake\Core\Plugin::routes()
+#11 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Routing/Router.php(947): include('/var/www/CakeTe...')
+#12 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Routing/Router.php(327): Cake\Routing\Router::_loadRoutes()
+#13 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Routing/Filter/RoutingFilter.php(53): Cake\Routing\Router::parse('debug_kit/toolb...')
+#14 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Routing/DispatcherFilter.php(145): Cake\Routing\Filter\RoutingFilter->beforeDispatch(Object(Cake\Event\Event))
+#15 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Event/EventManager.php(380): Cake\Routing\DispatcherFilter->handle(Object(Cake\Event\Event), Object(Cake\Network\Request), Object(Cake\Network\Response))
+#16 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Event/EventManager.php(346): Cake\Event\EventManager->_callListener(Array, Object(Cake\Event\Event))
+#17 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Event/EventManagerTrait.php(78): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#18 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(62): Cake\Routing\Dispatcher->dispatchEvent('Dispatcher.befo...', Array)
+#19 /var/www/CakeTeaster/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#20 {main}
+
+
+2015-02-24 03:12:52 Error: [Cake\Routing\Exception\MissingControllerException] Controller class test could not be found.
+Exception Attributes: array (
+  'class' => 'test',
+  'plugin' => 'CakeTeaster',
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /CakeTeaster/test
+Stack Trace:
+#0 /var/www/CakeTeaster/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-02-24 03:13:48 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Testing could not be found.
+Exception Attributes: array (
+  'class' => 'Testing',
+  'plugin' => 'CakeTeaster',
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /CakeTeaster/test
+Stack Trace:
+#0 /var/www/CakeTeaster/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-02-24 03:14:00 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Testing could not be found.
+Exception Attributes: array (
+  'class' => 'Testing',
+  'plugin' => 'CakeTeaster',
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /CakeTeaster/test
+Stack Trace:
+#0 /var/www/CakeTeaster/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-02-24 03:14:38 Warning: Warning (2): Missing argument 1 for CakeTeaster\Controller\TestingController::index() in [/var/www/CakeTeaster/plugins/CakeTeaster/src/Controller/TestingController.php, line 12]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 138
+CakeTeaster\Controller\TestingController::index() - ROOT/plugins/CakeTeaster/src/Controller/TestingController.php, line 12
+Cake\Controller\Controller::invokeAction() - CORE/src/Controller/Controller.php, line 405
+Cake\Routing\Dispatcher::_invoke() - CORE/src/Routing/Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE/src/Routing/Dispatcher.php, line 87
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2015-02-24 03:14:38 Error: [Cake\View\Exception\MissingTemplateException] Template file "Testing/index.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Testing/index.ctp',
+)
+Request URL: /CakeTeaster/test
+Stack Trace:
+#0 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/View/View.php(460): Cake\View\View->_getViewFileName(NULL)
+#1 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Controller/Controller.php(576): Cake\View\View->render(NULL, NULL)
+#2 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(120): Cake\Controller\Controller->render()
+#3 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(CakeTeaster\Controller\TestingController))
+#4 /var/www/CakeTeaster/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#5 {main}
+
+
+2015-02-24 03:14:45 Error: [Cake\View\Exception\MissingTemplateException] Template file "Testing/index.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Testing/index.ctp',
+)
+Request URL: /CakeTeaster/test
+Stack Trace:
+#0 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/View/View.php(460): Cake\View\View->_getViewFileName(NULL)
+#1 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Controller/Controller.php(576): Cake\View\View->render(NULL, NULL)
+#2 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(120): Cake\Controller\Controller->render()
+#3 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(CakeTeaster\Controller\TestingController))
+#4 /var/www/CakeTeaster/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#5 {main}
+
+
+2015-02-24 03:14:52 Error: [Cake\View\Exception\MissingTemplateException] Template file "Testing/index.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Testing/index.ctp',
+)
+Request URL: /CakeTeaster/test
+Stack Trace:
+#0 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/View/View.php(460): Cake\View\View->_getViewFileName(NULL)
+#1 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Controller/Controller.php(576): Cake\View\View->render(NULL, NULL)
+#2 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(120): Cake\Controller\Controller->render()
+#3 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(CakeTeaster\Controller\TestingController))
+#4 /var/www/CakeTeaster/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#5 {main}
+
+
+2015-02-24 03:17:33 Error: [Cake\View\Exception\MissingTemplateException] Template file "Testing/index.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Testing/index.ctp',
+)
+Request URL: /CakeTeaster/test
+Stack Trace:
+#0 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/View/View.php(460): Cake\View\View->_getViewFileName(NULL)
+#1 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Controller/Controller.php(576): Cake\View\View->render(NULL, NULL)
+#2 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(120): Cake\Controller\Controller->render()
+#3 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(CakeTeaster\Controller\TestingController))
+#4 /var/www/CakeTeaster/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#5 {main}
+
+
+2015-02-24 03:19:09 Warning: Warning (2): Invalid argument supplied for foreach() in [/var/www/CakeTeaster/plugins/CakeTeaster/src/Template/Testing/index.ctp, line 69]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 138
+include - ROOT/plugins/CakeTeaster/src/Template/Testing/index.ctp, line 69
+Cake\View\View::_evaluate() - CORE/src/View/View.php, line 815
+Cake\View\View::_render() - CORE/src/View/View.php, line 775
+Cake\View\View::render() - CORE/src/View/View.php, line 463
+Cake\Controller\Controller::render() - CORE/src/Controller/Controller.php, line 576
+Cake\Routing\Dispatcher::_invoke() - CORE/src/Routing/Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE/src/Routing/Dispatcher.php, line 87
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2015-02-25 03:07:00 Warning: Warning (2): Invalid argument supplied for foreach() in [/var/www/CakeTeaster/plugins/CakeTeaster/src/Template/Testing/index.ctp, line 69]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 138
+include - ROOT/plugins/CakeTeaster/src/Template/Testing/index.ctp, line 69
+Cake\View\View::_evaluate() - CORE/src/View/View.php, line 815
+Cake\View\View::_render() - CORE/src/View/View.php, line 775
+Cake\View\View::render() - CORE/src/View/View.php, line 463
+Cake\Controller\Controller::render() - CORE/src/Controller/Controller.php, line 576
+Cake\Routing\Dispatcher::_invoke() - CORE/src/Routing/Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE/src/Routing/Dispatcher.php, line 87
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2015-02-25 23:43:21 Error: Fatal Error (4): syntax error, unexpected '->' (T_OBJECT_OPERATOR) in [/var/www/CakeTeaster/plugins/CakeTeaster/src/Template/Testing/index.ctp, line 2]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-02-25 23:43:21 Error: [Cake\Error\FatalErrorException] syntax error, unexpected '->' (T_OBJECT_OPERATOR)
+Request URL: /CakeTeaster/test
+Stack Trace:
+#0 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', '/var/www/CakeTe...', 2)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-02-25 23:43:28 Warning: Warning (4096): Argument 2 passed to Cake\View\Helper\HtmlHelper::css() must be of the type array, null given, called in /var/www/CakeTeaster/plugins/CakeTeaster/src/Template/Testing/index.ctp on line 2 and defined in [/var/www/CakeTeaster/vendor/cakephp/cakephp/src/View/Helper/HtmlHelper.php, line 407]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 138
+Cake\View\Helper\HtmlHelper::css() - CORE/src/View/Helper/HtmlHelper.php, line 407
+include - ROOT/plugins/CakeTeaster/src/Template/Testing/index.ctp, line 2
+Cake\View\View::_evaluate() - CORE/src/View/View.php, line 815
+Cake\View\View::_render() - CORE/src/View/View.php, line 775
+Cake\View\View::render() - CORE/src/View/View.php, line 463
+Cake\Controller\Controller::render() - CORE/src/Controller/Controller.php, line 576
+Cake\Routing\Dispatcher::_invoke() - CORE/src/Routing/Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE/src/Routing/Dispatcher.php, line 87
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2015-02-25 23:43:28 Error: Fatal Error (1): Unsupported operand types in [/var/www/CakeTeaster/vendor/cakephp/cakephp/src/View/Helper/HtmlHelper.php, line 409]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-02-25 23:43:28 Error: [Cake\Error\FatalErrorException] Unsupported operand types
+Request URL: /CakeTeaster/test
+Stack Trace:
+#0 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Unsupported ope...', '/var/www/CakeTe...', 409)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-02-25 23:44:19 Warning: Warning (4096): Argument 2 passed to Cake\View\Helper\HtmlHelper::css() must be of the type array, null given, called in /var/www/CakeTeaster/plugins/CakeTeaster/src/Template/Testing/index.ctp on line 2 and defined in [/var/www/CakeTeaster/vendor/cakephp/cakephp/src/View/Helper/HtmlHelper.php, line 407]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 138
+Cake\View\Helper\HtmlHelper::css() - CORE/src/View/Helper/HtmlHelper.php, line 407
+include - ROOT/plugins/CakeTeaster/src/Template/Testing/index.ctp, line 2
+Cake\View\View::_evaluate() - CORE/src/View/View.php, line 815
+Cake\View\View::_render() - CORE/src/View/View.php, line 775
+Cake\View\View::render() - CORE/src/View/View.php, line 463
+Cake\Controller\Controller::render() - CORE/src/Controller/Controller.php, line 576
+Cake\Routing\Dispatcher::_invoke() - CORE/src/Routing/Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE/src/Routing/Dispatcher.php, line 87
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2015-02-25 23:44:19 Error: Fatal Error (1): Unsupported operand types in [/var/www/CakeTeaster/vendor/cakephp/cakephp/src/View/Helper/HtmlHelper.php, line 409]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-02-25 23:44:20 Error: [Cake\Error\FatalErrorException] Unsupported operand types
+Request URL: /CakeTeaster/test
+Stack Trace:
+#0 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Unsupported ope...', '/var/www/CakeTe...', 409)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-02-25 23:44:37 Warning: Warning (2): Invalid argument supplied for foreach() in [/var/www/CakeTeaster/plugins/CakeTeaster/src/Template/Testing/index.ctp, line 72]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 138
+include - ROOT/plugins/CakeTeaster/src/Template/Testing/index.ctp, line 72
+Cake\View\View::_evaluate() - CORE/src/View/View.php, line 815
+Cake\View\View::_render() - CORE/src/View/View.php, line 775
+Cake\View\View::render() - CORE/src/View/View.php, line 463
+Cake\Controller\Controller::render() - CORE/src/Controller/Controller.php, line 576
+Cake\Routing\Dispatcher::_invoke() - CORE/src/Routing/Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE/src/Routing/Dispatcher.php, line 87
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2015-02-25 23:44:42 Warning: Warning (2): Invalid argument supplied for foreach() in [/var/www/CakeTeaster/plugins/CakeTeaster/src/Template/Testing/index.ctp, line 72]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 138
+include - ROOT/plugins/CakeTeaster/src/Template/Testing/index.ctp, line 72
+Cake\View\View::_evaluate() - CORE/src/View/View.php, line 815
+Cake\View\View::_render() - CORE/src/View/View.php, line 775
+Cake\View\View::render() - CORE/src/View/View.php, line 463
+Cake\Controller\Controller::render() - CORE/src/Controller/Controller.php, line 576
+Cake\Routing\Dispatcher::_invoke() - CORE/src/Routing/Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE/src/Routing/Dispatcher.php, line 87
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2015-02-25 23:44:43 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /CakeTeaster/css/bootstrap.min.css
+Stack Trace:
+#0 /var/www/CakeTeaster/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-02-25 23:45:06 Warning: Warning (2): Invalid argument supplied for foreach() in [/var/www/CakeTeaster/plugins/CakeTeaster/src/Template/Testing/index.ctp, line 72]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 138
+include - ROOT/plugins/CakeTeaster/src/Template/Testing/index.ctp, line 72
+Cake\View\View::_evaluate() - CORE/src/View/View.php, line 815
+Cake\View\View::_render() - CORE/src/View/View.php, line 775
+Cake\View\View::render() - CORE/src/View/View.php, line 463
+Cake\Controller\Controller::render() - CORE/src/Controller/Controller.php, line 576
+Cake\Routing\Dispatcher::_invoke() - CORE/src/Routing/Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE/src/Routing/Dispatcher.php, line 87
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2015-02-25 23:45:27 Warning: Warning (2): Invalid argument supplied for foreach() in [/var/www/CakeTeaster/plugins/CakeTeaster/src/Template/Testing/index.ctp, line 72]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 138
+include - ROOT/plugins/CakeTeaster/src/Template/Testing/index.ctp, line 72
+Cake\View\View::_evaluate() - CORE/src/View/View.php, line 815
+Cake\View\View::_render() - CORE/src/View/View.php, line 775
+Cake\View\View::render() - CORE/src/View/View.php, line 463
+Cake\Controller\Controller::render() - CORE/src/Controller/Controller.php, line 576
+Cake\Routing\Dispatcher::_invoke() - CORE/src/Routing/Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE/src/Routing/Dispatcher.php, line 87
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2015-02-25 23:45:34 Warning: Warning (2): Invalid argument supplied for foreach() in [/var/www/CakeTeaster/plugins/CakeTeaster/src/Template/Testing/index.ctp, line 72]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 138
+include - ROOT/plugins/CakeTeaster/src/Template/Testing/index.ctp, line 72
+Cake\View\View::_evaluate() - CORE/src/View/View.php, line 815
+Cake\View\View::_render() - CORE/src/View/View.php, line 775
+Cake\View\View::render() - CORE/src/View/View.php, line 463
+Cake\Controller\Controller::render() - CORE/src/Controller/Controller.php, line 576
+Cake\Routing\Dispatcher::_invoke() - CORE/src/Routing/Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE/src/Routing/Dispatcher.php, line 87
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2015-02-25 23:45:46 Warning: Warning (2): Invalid argument supplied for foreach() in [/var/www/CakeTeaster/plugins/CakeTeaster/src/Template/Testing/index.ctp, line 72]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 138
+include - ROOT/plugins/CakeTeaster/src/Template/Testing/index.ctp, line 72
+Cake\View\View::_evaluate() - CORE/src/View/View.php, line 815
+Cake\View\View::_render() - CORE/src/View/View.php, line 775
+Cake\View\View::render() - CORE/src/View/View.php, line 463
+Cake\Controller\Controller::render() - CORE/src/Controller/Controller.php, line 576
+Cake\Routing\Dispatcher::_invoke() - CORE/src/Routing/Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE/src/Routing/Dispatcher.php, line 87
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2015-02-25 23:46:31 Warning: Warning (2): Invalid argument supplied for foreach() in [/var/www/CakeTeaster/plugins/CakeTeaster/src/Template/Testing/index.ctp, line 72]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 138
+include - ROOT/plugins/CakeTeaster/src/Template/Testing/index.ctp, line 72
+Cake\View\View::_evaluate() - CORE/src/View/View.php, line 815
+Cake\View\View::_render() - CORE/src/View/View.php, line 775
+Cake\View\View::render() - CORE/src/View/View.php, line 463
+Cake\Controller\Controller::render() - CORE/src/Controller/Controller.php, line 576
+Cake\Routing\Dispatcher::_invoke() - CORE/src/Routing/Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE/src/Routing/Dispatcher.php, line 87
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2015-02-25 23:46:41 Warning: Warning (2): Invalid argument supplied for foreach() in [/var/www/CakeTeaster/plugins/CakeTeaster/src/Template/Testing/index.ctp, line 72]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 138
+include - ROOT/plugins/CakeTeaster/src/Template/Testing/index.ctp, line 72
+Cake\View\View::_evaluate() - CORE/src/View/View.php, line 815
+Cake\View\View::_render() - CORE/src/View/View.php, line 775
+Cake\View\View::render() - CORE/src/View/View.php, line 463
+Cake\Controller\Controller::render() - CORE/src/Controller/Controller.php, line 576
+Cake\Routing\Dispatcher::_invoke() - CORE/src/Routing/Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE/src/Routing/Dispatcher.php, line 87
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2015-02-25 23:46:52 Warning: Warning (2): Invalid argument supplied for foreach() in [/var/www/CakeTeaster/plugins/CakeTeaster/src/Template/Testing/index.ctp, line 72]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 138
+include - ROOT/plugins/CakeTeaster/src/Template/Testing/index.ctp, line 72
+Cake\View\View::_evaluate() - CORE/src/View/View.php, line 815
+Cake\View\View::_render() - CORE/src/View/View.php, line 775
+Cake\View\View::render() - CORE/src/View/View.php, line 463
+Cake\Controller\Controller::render() - CORE/src/Controller/Controller.php, line 576
+Cake\Routing\Dispatcher::_invoke() - CORE/src/Routing/Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE/src/Routing/Dispatcher.php, line 87
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2015-02-25 23:47:05 Warning: Warning (2): Invalid argument supplied for foreach() in [/var/www/CakeTeaster/plugins/CakeTeaster/src/Template/Testing/index.ctp, line 72]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 138
+include - ROOT/plugins/CakeTeaster/src/Template/Testing/index.ctp, line 72
+Cake\View\View::_evaluate() - CORE/src/View/View.php, line 815
+Cake\View\View::_render() - CORE/src/View/View.php, line 775
+Cake\View\View::render() - CORE/src/View/View.php, line 463
+Cake\Controller\Controller::render() - CORE/src/Controller/Controller.php, line 576
+Cake\Routing\Dispatcher::_invoke() - CORE/src/Routing/Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE/src/Routing/Dispatcher.php, line 87
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2015-02-25 23:47:29 Warning: Warning (2): Invalid argument supplied for foreach() in [/var/www/CakeTeaster/plugins/CakeTeaster/src/Template/Testing/index.ctp, line 72]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 138
+include - ROOT/plugins/CakeTeaster/src/Template/Testing/index.ctp, line 72
+Cake\View\View::_evaluate() - CORE/src/View/View.php, line 815
+Cake\View\View::_render() - CORE/src/View/View.php, line 775
+Cake\View\View::render() - CORE/src/View/View.php, line 463
+Cake\Controller\Controller::render() - CORE/src/Controller/Controller.php, line 576
+Cake\Routing\Dispatcher::_invoke() - CORE/src/Routing/Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE/src/Routing/Dispatcher.php, line 87
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2015-02-25 23:52:22 Warning: Warning (2): Invalid argument supplied for foreach() in [/var/www/CakeTeaster/plugins/CakeTeaster/src/Template/Testing/index.ctp, line 72]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 138
+include - ROOT/plugins/CakeTeaster/src/Template/Testing/index.ctp, line 72
+Cake\View\View::_evaluate() - CORE/src/View/View.php, line 815
+Cake\View\View::_render() - CORE/src/View/View.php, line 775
+Cake\View\View::render() - CORE/src/View/View.php, line 463
+Cake\Controller\Controller::render() - CORE/src/Controller/Controller.php, line 576
+Cake\Routing\Dispatcher::_invoke() - CORE/src/Routing/Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE/src/Routing/Dispatcher.php, line 87
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2015-02-25 23:53:05 Warning: Warning (2): Invalid argument supplied for foreach() in [/var/www/CakeTeaster/plugins/CakeTeaster/src/Template/Testing/index.ctp, line 78]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 138
+include - ROOT/plugins/CakeTeaster/src/Template/Testing/index.ctp, line 78
+Cake\View\View::_evaluate() - CORE/src/View/View.php, line 815
+Cake\View\View::_render() - CORE/src/View/View.php, line 775
+Cake\View\View::render() - CORE/src/View/View.php, line 463
+Cake\Controller\Controller::render() - CORE/src/Controller/Controller.php, line 576
+Cake\Routing\Dispatcher::_invoke() - CORE/src/Routing/Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE/src/Routing/Dispatcher.php, line 87
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2015-02-26 00:00:48 Warning: Warning (2): Invalid argument supplied for foreach() in [/var/www/CakeTeaster/plugins/CakeTeaster/src/Template/Testing/index.ctp, line 88]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 138
+include - ROOT/plugins/CakeTeaster/src/Template/Testing/index.ctp, line 88
+Cake\View\View::_evaluate() - CORE/src/View/View.php, line 815
+Cake\View\View::_render() - CORE/src/View/View.php, line 775
+Cake\View\View::render() - CORE/src/View/View.php, line 463
+Cake\Controller\Controller::render() - CORE/src/Controller/Controller.php, line 576
+Cake\Routing\Dispatcher::_invoke() - CORE/src/Routing/Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE/src/Routing/Dispatcher.php, line 87
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2015-02-26 00:00:58 Warning: Warning (2): Invalid argument supplied for foreach() in [/var/www/CakeTeaster/plugins/CakeTeaster/src/Template/Testing/index.ctp, line 88]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 138
+include - ROOT/plugins/CakeTeaster/src/Template/Testing/index.ctp, line 88
+Cake\View\View::_evaluate() - CORE/src/View/View.php, line 815
+Cake\View\View::_render() - CORE/src/View/View.php, line 775
+Cake\View\View::render() - CORE/src/View/View.php, line 463
+Cake\Controller\Controller::render() - CORE/src/Controller/Controller.php, line 576
+Cake\Routing\Dispatcher::_invoke() - CORE/src/Routing/Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE/src/Routing/Dispatcher.php, line 87
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2015-02-26 00:01:47 Warning: Warning (2): Invalid argument supplied for foreach() in [/var/www/CakeTeaster/plugins/CakeTeaster/src/Template/Testing/index.ctp, line 80]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 138
+include - ROOT/plugins/CakeTeaster/src/Template/Testing/index.ctp, line 80
+Cake\View\View::_evaluate() - CORE/src/View/View.php, line 815
+Cake\View\View::_render() - CORE/src/View/View.php, line 775
+Cake\View\View::render() - CORE/src/View/View.php, line 463
+Cake\Controller\Controller::render() - CORE/src/Controller/Controller.php, line 576
+Cake\Routing\Dispatcher::_invoke() - CORE/src/Routing/Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE/src/Routing/Dispatcher.php, line 87
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2015-02-26 00:03:11 Warning: Warning (2): Invalid argument supplied for foreach() in [/var/www/CakeTeaster/plugins/CakeTeaster/src/Template/Testing/index.ctp, line 58]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 138
+include - ROOT/plugins/CakeTeaster/src/Template/Testing/index.ctp, line 58
+Cake\View\View::_evaluate() - CORE/src/View/View.php, line 815
+Cake\View\View::_render() - CORE/src/View/View.php, line 775
+Cake\View\View::render() - CORE/src/View/View.php, line 463
+Cake\Controller\Controller::render() - CORE/src/Controller/Controller.php, line 576
+Cake\Routing\Dispatcher::_invoke() - CORE/src/Routing/Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE/src/Routing/Dispatcher.php, line 87
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2015-02-26 00:05:19 Warning: Warning (2): Invalid argument supplied for foreach() in [/var/www/CakeTeaster/plugins/CakeTeaster/src/Template/Testing/index.ctp, line 56]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 138
+include - ROOT/plugins/CakeTeaster/src/Template/Testing/index.ctp, line 56
+Cake\View\View::_evaluate() - CORE/src/View/View.php, line 815
+Cake\View\View::_render() - CORE/src/View/View.php, line 775
+Cake\View\View::render() - CORE/src/View/View.php, line 463
+Cake\Controller\Controller::render() - CORE/src/Controller/Controller.php, line 576
+Cake\Routing\Dispatcher::_invoke() - CORE/src/Routing/Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE/src/Routing/Dispatcher.php, line 87
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2015-02-26 00:05:20 Error: [Cake\Routing\Exception\MissingControllerException] Controller class fonts could not be found.
+Exception Attributes: array (
+  'class' => 'fonts',
+  'plugin' => 'CakeTeaster',
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /CakeTeaster/cake_teaster/fonts/glyphicons-halflings-regular.woff
+Stack Trace:
+#0 /var/www/CakeTeaster/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-02-26 00:05:20 Error: [Cake\Routing\Exception\MissingControllerException] Controller class fonts could not be found.
+Exception Attributes: array (
+  'class' => 'fonts',
+  'plugin' => 'CakeTeaster',
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /CakeTeaster/cake_teaster/fonts/glyphicons-halflings-regular.ttf
+Stack Trace:
+#0 /var/www/CakeTeaster/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-02-26 00:05:43 Warning: Warning (2): Invalid argument supplied for foreach() in [/var/www/CakeTeaster/plugins/CakeTeaster/src/Template/Testing/index.ctp, line 54]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 138
+include - ROOT/plugins/CakeTeaster/src/Template/Testing/index.ctp, line 54
+Cake\View\View::_evaluate() - CORE/src/View/View.php, line 815
+Cake\View\View::_render() - CORE/src/View/View.php, line 775
+Cake\View\View::render() - CORE/src/View/View.php, line 463
+Cake\Controller\Controller::render() - CORE/src/Controller/Controller.php, line 576
+Cake\Routing\Dispatcher::_invoke() - CORE/src/Routing/Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE/src/Routing/Dispatcher.php, line 87
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2015-02-26 00:05:44 Error: [Cake\Routing\Exception\MissingControllerException] Controller class fonts could not be found.
+Exception Attributes: array (
+  'class' => 'fonts',
+  'plugin' => 'CakeTeaster',
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /CakeTeaster/cake_teaster/fonts/glyphicons-halflings-regular.woff
+Stack Trace:
+#0 /var/www/CakeTeaster/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-02-26 00:05:45 Error: [Cake\Routing\Exception\MissingControllerException] Controller class fonts could not be found.
+Exception Attributes: array (
+  'class' => 'fonts',
+  'plugin' => 'CakeTeaster',
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /CakeTeaster/cake_teaster/fonts/glyphicons-halflings-regular.ttf
+Stack Trace:
+#0 /var/www/CakeTeaster/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-02-26 00:06:14 Warning: Warning (2): Invalid argument supplied for foreach() in [/var/www/CakeTeaster/plugins/CakeTeaster/src/Template/Testing/index.ctp, line 54]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 138
+include - ROOT/plugins/CakeTeaster/src/Template/Testing/index.ctp, line 54
+Cake\View\View::_evaluate() - CORE/src/View/View.php, line 815
+Cake\View\View::_render() - CORE/src/View/View.php, line 775
+Cake\View\View::render() - CORE/src/View/View.php, line 463
+Cake\Controller\Controller::render() - CORE/src/Controller/Controller.php, line 576
+Cake\Routing\Dispatcher::_invoke() - CORE/src/Routing/Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE/src/Routing/Dispatcher.php, line 87
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2015-02-26 00:06:15 Error: [Cake\Routing\Exception\MissingControllerException] Controller class fonts could not be found.
+Exception Attributes: array (
+  'class' => 'fonts',
+  'plugin' => 'CakeTeaster',
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /CakeTeaster/cake_teaster/fonts/glyphicons-halflings-regular.woff
+Stack Trace:
+#0 /var/www/CakeTeaster/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-02-26 00:06:15 Error: [Cake\Routing\Exception\MissingControllerException] Controller class fonts could not be found.
+Exception Attributes: array (
+  'class' => 'fonts',
+  'plugin' => 'CakeTeaster',
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /CakeTeaster/cake_teaster/fonts/glyphicons-halflings-regular.ttf
+Stack Trace:
+#0 /var/www/CakeTeaster/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-02-26 00:06:42 Warning: Warning (2): Invalid argument supplied for foreach() in [/var/www/CakeTeaster/plugins/CakeTeaster/src/Template/Testing/index.ctp, line 51]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 138
+include - ROOT/plugins/CakeTeaster/src/Template/Testing/index.ctp, line 51
+Cake\View\View::_evaluate() - CORE/src/View/View.php, line 815
+Cake\View\View::_render() - CORE/src/View/View.php, line 775
+Cake\View\View::render() - CORE/src/View/View.php, line 463
+Cake\Controller\Controller::render() - CORE/src/Controller/Controller.php, line 576
+Cake\Routing\Dispatcher::_invoke() - CORE/src/Routing/Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE/src/Routing/Dispatcher.php, line 87
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2015-02-26 00:06:43 Error: [Cake\Routing\Exception\MissingControllerException] Controller class fonts could not be found.
+Exception Attributes: array (
+  'class' => 'fonts',
+  'plugin' => 'CakeTeaster',
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /CakeTeaster/cake_teaster/fonts/glyphicons-halflings-regular.woff
+Stack Trace:
+#0 /var/www/CakeTeaster/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-02-26 00:06:43 Error: [Cake\Routing\Exception\MissingControllerException] Controller class fonts could not be found.
+Exception Attributes: array (
+  'class' => 'fonts',
+  'plugin' => 'CakeTeaster',
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /CakeTeaster/cake_teaster/fonts/glyphicons-halflings-regular.ttf
+Stack Trace:
+#0 /var/www/CakeTeaster/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-02-26 00:06:50 Warning: Warning (2): Invalid argument supplied for foreach() in [/var/www/CakeTeaster/plugins/CakeTeaster/src/Template/Testing/index.ctp, line 51]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 138
+include - ROOT/plugins/CakeTeaster/src/Template/Testing/index.ctp, line 51
+Cake\View\View::_evaluate() - CORE/src/View/View.php, line 815
+Cake\View\View::_render() - CORE/src/View/View.php, line 775
+Cake\View\View::render() - CORE/src/View/View.php, line 463
+Cake\Controller\Controller::render() - CORE/src/Controller/Controller.php, line 576
+Cake\Routing\Dispatcher::_invoke() - CORE/src/Routing/Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE/src/Routing/Dispatcher.php, line 87
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2015-02-26 00:06:51 Error: [Cake\Routing\Exception\MissingControllerException] Controller class fonts could not be found.
+Exception Attributes: array (
+  'class' => 'fonts',
+  'plugin' => 'CakeTeaster',
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /CakeTeaster/cake_teaster/fonts/glyphicons-halflings-regular.woff
+Stack Trace:
+#0 /var/www/CakeTeaster/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-02-26 00:06:52 Error: [Cake\Routing\Exception\MissingControllerException] Controller class fonts could not be found.
+Exception Attributes: array (
+  'class' => 'fonts',
+  'plugin' => 'CakeTeaster',
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /CakeTeaster/cake_teaster/fonts/glyphicons-halflings-regular.ttf
+Stack Trace:
+#0 /var/www/CakeTeaster/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-02-26 00:07:10 Warning: Warning (2): Invalid argument supplied for foreach() in [/var/www/CakeTeaster/plugins/CakeTeaster/src/Template/Testing/index.ctp, line 52]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 138
+include - ROOT/plugins/CakeTeaster/src/Template/Testing/index.ctp, line 52
+Cake\View\View::_evaluate() - CORE/src/View/View.php, line 815
+Cake\View\View::_render() - CORE/src/View/View.php, line 775
+Cake\View\View::render() - CORE/src/View/View.php, line 463
+Cake\Controller\Controller::render() - CORE/src/Controller/Controller.php, line 576
+Cake\Routing\Dispatcher::_invoke() - CORE/src/Routing/Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE/src/Routing/Dispatcher.php, line 87
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2015-02-26 00:07:11 Error: [Cake\Routing\Exception\MissingControllerException] Controller class fonts could not be found.
+Exception Attributes: array (
+  'class' => 'fonts',
+  'plugin' => 'CakeTeaster',
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /CakeTeaster/cake_teaster/fonts/glyphicons-halflings-regular.woff
+Stack Trace:
+#0 /var/www/CakeTeaster/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-02-26 00:07:11 Error: [Cake\Routing\Exception\MissingControllerException] Controller class fonts could not be found.
+Exception Attributes: array (
+  'class' => 'fonts',
+  'plugin' => 'CakeTeaster',
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /CakeTeaster/cake_teaster/fonts/glyphicons-halflings-regular.ttf
+Stack Trace:
+#0 /var/www/CakeTeaster/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-02-26 00:07:47 Warning: Warning (2): Invalid argument supplied for foreach() in [/var/www/CakeTeaster/plugins/CakeTeaster/src/Template/Testing/index.ctp, line 52]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 138
+include - ROOT/plugins/CakeTeaster/src/Template/Testing/index.ctp, line 52
+Cake\View\View::_evaluate() - CORE/src/View/View.php, line 815
+Cake\View\View::_render() - CORE/src/View/View.php, line 775
+Cake\View\View::render() - CORE/src/View/View.php, line 463
+Cake\Controller\Controller::render() - CORE/src/Controller/Controller.php, line 576
+Cake\Routing\Dispatcher::_invoke() - CORE/src/Routing/Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE/src/Routing/Dispatcher.php, line 87
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2015-02-26 00:07:48 Error: [Cake\Routing\Exception\MissingControllerException] Controller class fonts could not be found.
+Exception Attributes: array (
+  'class' => 'fonts',
+  'plugin' => 'CakeTeaster',
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /CakeTeaster/cake_teaster/fonts/glyphicons-halflings-regular.woff
+Stack Trace:
+#0 /var/www/CakeTeaster/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-02-26 00:07:48 Error: [Cake\Routing\Exception\MissingControllerException] Controller class fonts could not be found.
+Exception Attributes: array (
+  'class' => 'fonts',
+  'plugin' => 'CakeTeaster',
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /CakeTeaster/cake_teaster/fonts/glyphicons-halflings-regular.ttf
+Stack Trace:
+#0 /var/www/CakeTeaster/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-02-26 00:09:16 Warning: Warning (2): Invalid argument supplied for foreach() in [/var/www/CakeTeaster/plugins/CakeTeaster/src/Template/Testing/index.ctp, line 53]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 138
+include - ROOT/plugins/CakeTeaster/src/Template/Testing/index.ctp, line 53
+Cake\View\View::_evaluate() - CORE/src/View/View.php, line 815
+Cake\View\View::_render() - CORE/src/View/View.php, line 775
+Cake\View\View::render() - CORE/src/View/View.php, line 463
+Cake\Controller\Controller::render() - CORE/src/Controller/Controller.php, line 576
+Cake\Routing\Dispatcher::_invoke() - CORE/src/Routing/Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE/src/Routing/Dispatcher.php, line 87
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2015-02-26 00:09:17 Error: [Cake\Routing\Exception\MissingControllerException] Controller class fonts could not be found.
+Exception Attributes: array (
+  'class' => 'fonts',
+  'plugin' => 'CakeTeaster',
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /CakeTeaster/cake_teaster/fonts/glyphicons-halflings-regular.woff
+Stack Trace:
+#0 /var/www/CakeTeaster/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-02-26 00:09:17 Error: [Cake\Routing\Exception\MissingControllerException] Controller class fonts could not be found.
+Exception Attributes: array (
+  'class' => 'fonts',
+  'plugin' => 'CakeTeaster',
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /CakeTeaster/cake_teaster/fonts/glyphicons-halflings-regular.ttf
+Stack Trace:
+#0 /var/www/CakeTeaster/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-02-26 00:09:57 Warning: Warning (2): Invalid argument supplied for foreach() in [/var/www/CakeTeaster/plugins/CakeTeaster/src/Template/Testing/index.ctp, line 50]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 138
+include - ROOT/plugins/CakeTeaster/src/Template/Testing/index.ctp, line 50
+Cake\View\View::_evaluate() - CORE/src/View/View.php, line 815
+Cake\View\View::_render() - CORE/src/View/View.php, line 775
+Cake\View\View::render() - CORE/src/View/View.php, line 463
+Cake\Controller\Controller::render() - CORE/src/Controller/Controller.php, line 576
+Cake\Routing\Dispatcher::_invoke() - CORE/src/Routing/Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE/src/Routing/Dispatcher.php, line 87
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2015-02-26 00:09:58 Error: [Cake\Routing\Exception\MissingControllerException] Controller class fonts could not be found.
+Exception Attributes: array (
+  'class' => 'fonts',
+  'plugin' => 'CakeTeaster',
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /CakeTeaster/cake_teaster/fonts/glyphicons-halflings-regular.woff
+Stack Trace:
+#0 /var/www/CakeTeaster/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-02-26 00:09:58 Error: [Cake\Routing\Exception\MissingControllerException] Controller class fonts could not be found.
+Exception Attributes: array (
+  'class' => 'fonts',
+  'plugin' => 'CakeTeaster',
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /CakeTeaster/cake_teaster/fonts/glyphicons-halflings-regular.ttf
+Stack Trace:
+#0 /var/www/CakeTeaster/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-02-26 00:10:28 Warning: Warning (2): Invalid argument supplied for foreach() in [/var/www/CakeTeaster/plugins/CakeTeaster/src/Template/Testing/index.ctp, line 50]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 138
+include - ROOT/plugins/CakeTeaster/src/Template/Testing/index.ctp, line 50
+Cake\View\View::_evaluate() - CORE/src/View/View.php, line 815
+Cake\View\View::_render() - CORE/src/View/View.php, line 775
+Cake\View\View::render() - CORE/src/View/View.php, line 463
+Cake\Controller\Controller::render() - CORE/src/Controller/Controller.php, line 576
+Cake\Routing\Dispatcher::_invoke() - CORE/src/Routing/Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE/src/Routing/Dispatcher.php, line 87
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2015-02-26 00:10:30 Error: [Cake\Routing\Exception\MissingControllerException] Controller class fonts could not be found.
+Exception Attributes: array (
+  'class' => 'fonts',
+  'plugin' => 'CakeTeaster',
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /CakeTeaster/cake_teaster/fonts/glyphicons-halflings-regular.woff
+Stack Trace:
+#0 /var/www/CakeTeaster/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-02-26 00:10:30 Error: [Cake\Routing\Exception\MissingControllerException] Controller class fonts could not be found.
+Exception Attributes: array (
+  'class' => 'fonts',
+  'plugin' => 'CakeTeaster',
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /CakeTeaster/cake_teaster/fonts/glyphicons-halflings-regular.ttf
+Stack Trace:
+#0 /var/www/CakeTeaster/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-02-26 00:10:49 Warning: Warning (2): Invalid argument supplied for foreach() in [/var/www/CakeTeaster/plugins/CakeTeaster/src/Template/Testing/index.ctp, line 48]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 138
+include - ROOT/plugins/CakeTeaster/src/Template/Testing/index.ctp, line 48
+Cake\View\View::_evaluate() - CORE/src/View/View.php, line 815
+Cake\View\View::_render() - CORE/src/View/View.php, line 775
+Cake\View\View::render() - CORE/src/View/View.php, line 463
+Cake\Controller\Controller::render() - CORE/src/Controller/Controller.php, line 576
+Cake\Routing\Dispatcher::_invoke() - CORE/src/Routing/Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE/src/Routing/Dispatcher.php, line 87
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2015-02-26 00:10:50 Error: [Cake\Routing\Exception\MissingControllerException] Controller class fonts could not be found.
+Exception Attributes: array (
+  'class' => 'fonts',
+  'plugin' => 'CakeTeaster',
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /CakeTeaster/cake_teaster/fonts/glyphicons-halflings-regular.woff
+Stack Trace:
+#0 /var/www/CakeTeaster/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-02-26 00:10:50 Error: [Cake\Routing\Exception\MissingControllerException] Controller class fonts could not be found.
+Exception Attributes: array (
+  'class' => 'fonts',
+  'plugin' => 'CakeTeaster',
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /CakeTeaster/cake_teaster/fonts/glyphicons-halflings-regular.ttf
+Stack Trace:
+#0 /var/www/CakeTeaster/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-02-26 00:10:59 Warning: Warning (2): Invalid argument supplied for foreach() in [/var/www/CakeTeaster/plugins/CakeTeaster/src/Template/Testing/index.ctp, line 48]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 138
+include - ROOT/plugins/CakeTeaster/src/Template/Testing/index.ctp, line 48
+Cake\View\View::_evaluate() - CORE/src/View/View.php, line 815
+Cake\View\View::_render() - CORE/src/View/View.php, line 775
+Cake\View\View::render() - CORE/src/View/View.php, line 463
+Cake\Controller\Controller::render() - CORE/src/Controller/Controller.php, line 576
+Cake\Routing\Dispatcher::_invoke() - CORE/src/Routing/Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE/src/Routing/Dispatcher.php, line 87
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2015-02-26 00:11:00 Error: [Cake\Routing\Exception\MissingControllerException] Controller class fonts could not be found.
+Exception Attributes: array (
+  'class' => 'fonts',
+  'plugin' => 'CakeTeaster',
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /CakeTeaster/cake_teaster/fonts/glyphicons-halflings-regular.woff
+Stack Trace:
+#0 /var/www/CakeTeaster/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-02-26 00:11:00 Error: [Cake\Routing\Exception\MissingControllerException] Controller class fonts could not be found.
+Exception Attributes: array (
+  'class' => 'fonts',
+  'plugin' => 'CakeTeaster',
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /CakeTeaster/cake_teaster/fonts/glyphicons-halflings-regular.ttf
+Stack Trace:
+#0 /var/www/CakeTeaster/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-02-26 00:11:23 Warning: Warning (2): Invalid argument supplied for foreach() in [/var/www/CakeTeaster/plugins/CakeTeaster/src/Template/Testing/index.ctp, line 48]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 138
+include - ROOT/plugins/CakeTeaster/src/Template/Testing/index.ctp, line 48
+Cake\View\View::_evaluate() - CORE/src/View/View.php, line 815
+Cake\View\View::_render() - CORE/src/View/View.php, line 775
+Cake\View\View::render() - CORE/src/View/View.php, line 463
+Cake\Controller\Controller::render() - CORE/src/Controller/Controller.php, line 576
+Cake\Routing\Dispatcher::_invoke() - CORE/src/Routing/Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE/src/Routing/Dispatcher.php, line 87
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2015-02-26 00:11:24 Error: [Cake\Routing\Exception\MissingControllerException] Controller class fonts could not be found.
+Exception Attributes: array (
+  'class' => 'fonts',
+  'plugin' => 'CakeTeaster',
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /CakeTeaster/cake_teaster/fonts/glyphicons-halflings-regular.woff
+Stack Trace:
+#0 /var/www/CakeTeaster/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-02-26 00:11:24 Error: [Cake\Routing\Exception\MissingControllerException] Controller class fonts could not be found.
+Exception Attributes: array (
+  'class' => 'fonts',
+  'plugin' => 'CakeTeaster',
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /CakeTeaster/cake_teaster/fonts/glyphicons-halflings-regular.ttf
+Stack Trace:
+#0 /var/www/CakeTeaster/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-02-26 00:11:31 Warning: Warning (2): Invalid argument supplied for foreach() in [/var/www/CakeTeaster/plugins/CakeTeaster/src/Template/Testing/index.ctp, line 48]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 138
+include - ROOT/plugins/CakeTeaster/src/Template/Testing/index.ctp, line 48
+Cake\View\View::_evaluate() - CORE/src/View/View.php, line 815
+Cake\View\View::_render() - CORE/src/View/View.php, line 775
+Cake\View\View::render() - CORE/src/View/View.php, line 463
+Cake\Controller\Controller::render() - CORE/src/Controller/Controller.php, line 576
+Cake\Routing\Dispatcher::_invoke() - CORE/src/Routing/Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE/src/Routing/Dispatcher.php, line 87
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2015-02-26 00:11:32 Error: [Cake\Routing\Exception\MissingControllerException] Controller class fonts could not be found.
+Exception Attributes: array (
+  'class' => 'fonts',
+  'plugin' => 'CakeTeaster',
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /CakeTeaster/cake_teaster/fonts/glyphicons-halflings-regular.woff
+Stack Trace:
+#0 /var/www/CakeTeaster/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-02-26 00:11:33 Error: [Cake\Routing\Exception\MissingControllerException] Controller class fonts could not be found.
+Exception Attributes: array (
+  'class' => 'fonts',
+  'plugin' => 'CakeTeaster',
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /CakeTeaster/cake_teaster/fonts/glyphicons-halflings-regular.ttf
+Stack Trace:
+#0 /var/www/CakeTeaster/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-02-26 00:12:00 Warning: Warning (2): Invalid argument supplied for foreach() in [/var/www/CakeTeaster/plugins/CakeTeaster/src/Template/Testing/index.ctp, line 45]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 138
+include - ROOT/plugins/CakeTeaster/src/Template/Testing/index.ctp, line 45
+Cake\View\View::_evaluate() - CORE/src/View/View.php, line 815
+Cake\View\View::_render() - CORE/src/View/View.php, line 775
+Cake\View\View::render() - CORE/src/View/View.php, line 463
+Cake\Controller\Controller::render() - CORE/src/Controller/Controller.php, line 576
+Cake\Routing\Dispatcher::_invoke() - CORE/src/Routing/Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE/src/Routing/Dispatcher.php, line 87
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2015-02-26 00:12:01 Error: [Cake\Routing\Exception\MissingControllerException] Controller class fonts could not be found.
+Exception Attributes: array (
+  'class' => 'fonts',
+  'plugin' => 'CakeTeaster',
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /CakeTeaster/cake_teaster/fonts/glyphicons-halflings-regular.woff
+Stack Trace:
+#0 /var/www/CakeTeaster/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-02-26 00:12:01 Error: [Cake\Routing\Exception\MissingControllerException] Controller class fonts could not be found.
+Exception Attributes: array (
+  'class' => 'fonts',
+  'plugin' => 'CakeTeaster',
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /CakeTeaster/cake_teaster/fonts/glyphicons-halflings-regular.ttf
+Stack Trace:
+#0 /var/www/CakeTeaster/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-02-26 00:12:25 Warning: Warning (2): Invalid argument supplied for foreach() in [/var/www/CakeTeaster/plugins/CakeTeaster/src/Template/Testing/index.ctp, line 42]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 138
+include - ROOT/plugins/CakeTeaster/src/Template/Testing/index.ctp, line 42
+Cake\View\View::_evaluate() - CORE/src/View/View.php, line 815
+Cake\View\View::_render() - CORE/src/View/View.php, line 775
+Cake\View\View::render() - CORE/src/View/View.php, line 463
+Cake\Controller\Controller::render() - CORE/src/Controller/Controller.php, line 576
+Cake\Routing\Dispatcher::_invoke() - CORE/src/Routing/Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE/src/Routing/Dispatcher.php, line 87
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2015-02-26 00:12:26 Error: [Cake\Routing\Exception\MissingControllerException] Controller class fonts could not be found.
+Exception Attributes: array (
+  'class' => 'fonts',
+  'plugin' => 'CakeTeaster',
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /CakeTeaster/cake_teaster/fonts/glyphicons-halflings-regular.woff
+Stack Trace:
+#0 /var/www/CakeTeaster/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-02-26 00:12:26 Error: [Cake\Routing\Exception\MissingControllerException] Controller class fonts could not be found.
+Exception Attributes: array (
+  'class' => 'fonts',
+  'plugin' => 'CakeTeaster',
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /CakeTeaster/cake_teaster/fonts/glyphicons-halflings-regular.ttf
+Stack Trace:
+#0 /var/www/CakeTeaster/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-02-26 00:13:08 Warning: Warning (2): Invalid argument supplied for foreach() in [/var/www/CakeTeaster/plugins/CakeTeaster/src/Template/Testing/index.ctp, line 42]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 138
+include - ROOT/plugins/CakeTeaster/src/Template/Testing/index.ctp, line 42
+Cake\View\View::_evaluate() - CORE/src/View/View.php, line 815
+Cake\View\View::_render() - CORE/src/View/View.php, line 775
+Cake\View\View::render() - CORE/src/View/View.php, line 463
+Cake\Controller\Controller::render() - CORE/src/Controller/Controller.php, line 576
+Cake\Routing\Dispatcher::_invoke() - CORE/src/Routing/Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE/src/Routing/Dispatcher.php, line 87
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2015-02-26 00:13:09 Error: [Cake\Routing\Exception\MissingControllerException] Controller class fonts could not be found.
+Exception Attributes: array (
+  'class' => 'fonts',
+  'plugin' => 'CakeTeaster',
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /CakeTeaster/cake_teaster/fonts/glyphicons-halflings-regular.woff
+Stack Trace:
+#0 /var/www/CakeTeaster/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-02-26 00:13:10 Error: [Cake\Routing\Exception\MissingControllerException] Controller class fonts could not be found.
+Exception Attributes: array (
+  'class' => 'fonts',
+  'plugin' => 'CakeTeaster',
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /CakeTeaster/cake_teaster/fonts/glyphicons-halflings-regular.ttf
+Stack Trace:
+#0 /var/www/CakeTeaster/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-02-26 00:13:14 Warning: Warning (2): Invalid argument supplied for foreach() in [/var/www/CakeTeaster/plugins/CakeTeaster/src/Template/Testing/index.ctp, line 42]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 138
+include - ROOT/plugins/CakeTeaster/src/Template/Testing/index.ctp, line 42
+Cake\View\View::_evaluate() - CORE/src/View/View.php, line 815
+Cake\View\View::_render() - CORE/src/View/View.php, line 775
+Cake\View\View::render() - CORE/src/View/View.php, line 463
+Cake\Controller\Controller::render() - CORE/src/Controller/Controller.php, line 576
+Cake\Routing\Dispatcher::_invoke() - CORE/src/Routing/Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE/src/Routing/Dispatcher.php, line 87
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2015-02-26 00:13:15 Error: [Cake\Routing\Exception\MissingControllerException] Controller class fonts could not be found.
+Exception Attributes: array (
+  'class' => 'fonts',
+  'plugin' => 'CakeTeaster',
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /CakeTeaster/cake_teaster/fonts/glyphicons-halflings-regular.woff
+Stack Trace:
+#0 /var/www/CakeTeaster/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-02-26 00:13:16 Error: [Cake\Routing\Exception\MissingControllerException] Controller class fonts could not be found.
+Exception Attributes: array (
+  'class' => 'fonts',
+  'plugin' => 'CakeTeaster',
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /CakeTeaster/cake_teaster/fonts/glyphicons-halflings-regular.ttf
+Stack Trace:
+#0 /var/www/CakeTeaster/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-02-26 00:13:37 Warning: Warning (2): Invalid argument supplied for foreach() in [/var/www/CakeTeaster/plugins/CakeTeaster/src/Template/Testing/index.ctp, line 42]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 138
+include - ROOT/plugins/CakeTeaster/src/Template/Testing/index.ctp, line 42
+Cake\View\View::_evaluate() - CORE/src/View/View.php, line 815
+Cake\View\View::_render() - CORE/src/View/View.php, line 775
+Cake\View\View::render() - CORE/src/View/View.php, line 463
+Cake\Controller\Controller::render() - CORE/src/Controller/Controller.php, line 576
+Cake\Routing\Dispatcher::_invoke() - CORE/src/Routing/Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE/src/Routing/Dispatcher.php, line 87
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2015-02-26 00:13:38 Error: [Cake\Routing\Exception\MissingControllerException] Controller class fonts could not be found.
+Exception Attributes: array (
+  'class' => 'fonts',
+  'plugin' => 'CakeTeaster',
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /CakeTeaster/cake_teaster/fonts/glyphicons-halflings-regular.woff
+Stack Trace:
+#0 /var/www/CakeTeaster/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-02-26 00:13:39 Error: [Cake\Routing\Exception\MissingControllerException] Controller class fonts could not be found.
+Exception Attributes: array (
+  'class' => 'fonts',
+  'plugin' => 'CakeTeaster',
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /CakeTeaster/cake_teaster/fonts/glyphicons-halflings-regular.ttf
+Stack Trace:
+#0 /var/www/CakeTeaster/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-02-26 00:13:54 Warning: Warning (2): Invalid argument supplied for foreach() in [/var/www/CakeTeaster/plugins/CakeTeaster/src/Template/Testing/index.ctp, line 42]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 138
+include - ROOT/plugins/CakeTeaster/src/Template/Testing/index.ctp, line 42
+Cake\View\View::_evaluate() - CORE/src/View/View.php, line 815
+Cake\View\View::_render() - CORE/src/View/View.php, line 775
+Cake\View\View::render() - CORE/src/View/View.php, line 463
+Cake\Controller\Controller::render() - CORE/src/Controller/Controller.php, line 576
+Cake\Routing\Dispatcher::_invoke() - CORE/src/Routing/Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE/src/Routing/Dispatcher.php, line 87
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2015-02-26 00:13:54 Error: [Cake\Routing\Exception\MissingControllerException] Controller class fonts could not be found.
+Exception Attributes: array (
+  'class' => 'fonts',
+  'plugin' => 'CakeTeaster',
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /CakeTeaster/cake_teaster/fonts/glyphicons-halflings-regular.woff
+Stack Trace:
+#0 /var/www/CakeTeaster/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-02-26 00:13:55 Error: [Cake\Routing\Exception\MissingControllerException] Controller class fonts could not be found.
+Exception Attributes: array (
+  'class' => 'fonts',
+  'plugin' => 'CakeTeaster',
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /CakeTeaster/cake_teaster/fonts/glyphicons-halflings-regular.ttf
+Stack Trace:
+#0 /var/www/CakeTeaster/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-02-26 00:14:14 Warning: Warning (2): Invalid argument supplied for foreach() in [/var/www/CakeTeaster/plugins/CakeTeaster/src/Template/Testing/index.ctp, line 42]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 138
+include - ROOT/plugins/CakeTeaster/src/Template/Testing/index.ctp, line 42
+Cake\View\View::_evaluate() - CORE/src/View/View.php, line 815
+Cake\View\View::_render() - CORE/src/View/View.php, line 775
+Cake\View\View::render() - CORE/src/View/View.php, line 463
+Cake\Controller\Controller::render() - CORE/src/Controller/Controller.php, line 576
+Cake\Routing\Dispatcher::_invoke() - CORE/src/Routing/Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE/src/Routing/Dispatcher.php, line 87
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2015-02-26 00:14:15 Error: [Cake\Routing\Exception\MissingControllerException] Controller class fonts could not be found.
+Exception Attributes: array (
+  'class' => 'fonts',
+  'plugin' => 'CakeTeaster',
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /CakeTeaster/cake_teaster/fonts/glyphicons-halflings-regular.woff
+Stack Trace:
+#0 /var/www/CakeTeaster/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-02-26 00:14:15 Error: [Cake\Routing\Exception\MissingControllerException] Controller class fonts could not be found.
+Exception Attributes: array (
+  'class' => 'fonts',
+  'plugin' => 'CakeTeaster',
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /CakeTeaster/cake_teaster/fonts/glyphicons-halflings-regular.ttf
+Stack Trace:
+#0 /var/www/CakeTeaster/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-02-26 00:14:26 Warning: Warning (2): Invalid argument supplied for foreach() in [/var/www/CakeTeaster/plugins/CakeTeaster/src/Template/Testing/index.ctp, line 42]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 138
+include - ROOT/plugins/CakeTeaster/src/Template/Testing/index.ctp, line 42
+Cake\View\View::_evaluate() - CORE/src/View/View.php, line 815
+Cake\View\View::_render() - CORE/src/View/View.php, line 775
+Cake\View\View::render() - CORE/src/View/View.php, line 463
+Cake\Controller\Controller::render() - CORE/src/Controller/Controller.php, line 576
+Cake\Routing\Dispatcher::_invoke() - CORE/src/Routing/Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE/src/Routing/Dispatcher.php, line 87
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2015-02-26 00:14:27 Error: [Cake\Routing\Exception\MissingControllerException] Controller class fonts could not be found.
+Exception Attributes: array (
+  'class' => 'fonts',
+  'plugin' => 'CakeTeaster',
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /CakeTeaster/cake_teaster/fonts/glyphicons-halflings-regular.woff
+Stack Trace:
+#0 /var/www/CakeTeaster/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-02-26 00:14:28 Error: [Cake\Routing\Exception\MissingControllerException] Controller class fonts could not be found.
+Exception Attributes: array (
+  'class' => 'fonts',
+  'plugin' => 'CakeTeaster',
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /CakeTeaster/cake_teaster/fonts/glyphicons-halflings-regular.ttf
+Stack Trace:
+#0 /var/www/CakeTeaster/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-02-26 00:14:34 Warning: Warning (2): Invalid argument supplied for foreach() in [/var/www/CakeTeaster/plugins/CakeTeaster/src/Template/Testing/index.ctp, line 42]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 138
+include - ROOT/plugins/CakeTeaster/src/Template/Testing/index.ctp, line 42
+Cake\View\View::_evaluate() - CORE/src/View/View.php, line 815
+Cake\View\View::_render() - CORE/src/View/View.php, line 775
+Cake\View\View::render() - CORE/src/View/View.php, line 463
+Cake\Controller\Controller::render() - CORE/src/Controller/Controller.php, line 576
+Cake\Routing\Dispatcher::_invoke() - CORE/src/Routing/Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE/src/Routing/Dispatcher.php, line 87
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2015-02-26 00:14:35 Error: [Cake\Routing\Exception\MissingControllerException] Controller class fonts could not be found.
+Exception Attributes: array (
+  'class' => 'fonts',
+  'plugin' => 'CakeTeaster',
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /CakeTeaster/cake_teaster/fonts/glyphicons-halflings-regular.woff
+Stack Trace:
+#0 /var/www/CakeTeaster/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-02-26 00:14:36 Error: [Cake\Routing\Exception\MissingControllerException] Controller class fonts could not be found.
+Exception Attributes: array (
+  'class' => 'fonts',
+  'plugin' => 'CakeTeaster',
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /CakeTeaster/cake_teaster/fonts/glyphicons-halflings-regular.ttf
+Stack Trace:
+#0 /var/www/CakeTeaster/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-02-26 00:14:55 Warning: Warning (2): Invalid argument supplied for foreach() in [/var/www/CakeTeaster/plugins/CakeTeaster/src/Template/Testing/index.ctp, line 42]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 138
+include - ROOT/plugins/CakeTeaster/src/Template/Testing/index.ctp, line 42
+Cake\View\View::_evaluate() - CORE/src/View/View.php, line 815
+Cake\View\View::_render() - CORE/src/View/View.php, line 775
+Cake\View\View::render() - CORE/src/View/View.php, line 463
+Cake\Controller\Controller::render() - CORE/src/Controller/Controller.php, line 576
+Cake\Routing\Dispatcher::_invoke() - CORE/src/Routing/Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE/src/Routing/Dispatcher.php, line 87
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2015-02-26 00:14:56 Error: [Cake\Routing\Exception\MissingControllerException] Controller class fonts could not be found.
+Exception Attributes: array (
+  'class' => 'fonts',
+  'plugin' => 'CakeTeaster',
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /CakeTeaster/cake_teaster/fonts/glyphicons-halflings-regular.woff
+Stack Trace:
+#0 /var/www/CakeTeaster/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-02-26 00:14:57 Error: [Cake\Routing\Exception\MissingControllerException] Controller class fonts could not be found.
+Exception Attributes: array (
+  'class' => 'fonts',
+  'plugin' => 'CakeTeaster',
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /CakeTeaster/cake_teaster/fonts/glyphicons-halflings-regular.ttf
+Stack Trace:
+#0 /var/www/CakeTeaster/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-02-26 00:14:58 Warning: Warning (2): Invalid argument supplied for foreach() in [/var/www/CakeTeaster/plugins/CakeTeaster/src/Template/Testing/index.ctp, line 42]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 138
+include - ROOT/plugins/CakeTeaster/src/Template/Testing/index.ctp, line 42
+Cake\View\View::_evaluate() - CORE/src/View/View.php, line 815
+Cake\View\View::_render() - CORE/src/View/View.php, line 775
+Cake\View\View::render() - CORE/src/View/View.php, line 463
+Cake\Controller\Controller::render() - CORE/src/Controller/Controller.php, line 576
+Cake\Routing\Dispatcher::_invoke() - CORE/src/Routing/Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE/src/Routing/Dispatcher.php, line 87
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2015-02-26 00:14:59 Error: [Cake\Routing\Exception\MissingControllerException] Controller class fonts could not be found.
+Exception Attributes: array (
+  'class' => 'fonts',
+  'plugin' => 'CakeTeaster',
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /CakeTeaster/cake_teaster/fonts/glyphicons-halflings-regular.woff
+Stack Trace:
+#0 /var/www/CakeTeaster/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-02-26 00:15:00 Error: [Cake\Routing\Exception\MissingControllerException] Controller class fonts could not be found.
+Exception Attributes: array (
+  'class' => 'fonts',
+  'plugin' => 'CakeTeaster',
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /CakeTeaster/cake_teaster/fonts/glyphicons-halflings-regular.ttf
+Stack Trace:
+#0 /var/www/CakeTeaster/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-02-26 00:15:08 Warning: Warning (2): Invalid argument supplied for foreach() in [/var/www/CakeTeaster/plugins/CakeTeaster/src/Template/Testing/index.ctp, line 41]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 138
+include - ROOT/plugins/CakeTeaster/src/Template/Testing/index.ctp, line 41
+Cake\View\View::_evaluate() - CORE/src/View/View.php, line 815
+Cake\View\View::_render() - CORE/src/View/View.php, line 775
+Cake\View\View::render() - CORE/src/View/View.php, line 463
+Cake\Controller\Controller::render() - CORE/src/Controller/Controller.php, line 576
+Cake\Routing\Dispatcher::_invoke() - CORE/src/Routing/Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE/src/Routing/Dispatcher.php, line 87
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2015-02-26 00:15:09 Error: [Cake\Routing\Exception\MissingControllerException] Controller class fonts could not be found.
+Exception Attributes: array (
+  'class' => 'fonts',
+  'plugin' => 'CakeTeaster',
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /CakeTeaster/cake_teaster/fonts/glyphicons-halflings-regular.woff
+Stack Trace:
+#0 /var/www/CakeTeaster/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-02-26 00:15:10 Error: [Cake\Routing\Exception\MissingControllerException] Controller class fonts could not be found.
+Exception Attributes: array (
+  'class' => 'fonts',
+  'plugin' => 'CakeTeaster',
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /CakeTeaster/cake_teaster/fonts/glyphicons-halflings-regular.ttf
+Stack Trace:
+#0 /var/www/CakeTeaster/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-02-26 00:15:17 Warning: Warning (2): Invalid argument supplied for foreach() in [/var/www/CakeTeaster/plugins/CakeTeaster/src/Template/Testing/index.ctp, line 41]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 138
+include - ROOT/plugins/CakeTeaster/src/Template/Testing/index.ctp, line 41
+Cake\View\View::_evaluate() - CORE/src/View/View.php, line 815
+Cake\View\View::_render() - CORE/src/View/View.php, line 775
+Cake\View\View::render() - CORE/src/View/View.php, line 463
+Cake\Controller\Controller::render() - CORE/src/Controller/Controller.php, line 576
+Cake\Routing\Dispatcher::_invoke() - CORE/src/Routing/Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE/src/Routing/Dispatcher.php, line 87
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2015-02-26 00:15:18 Error: [Cake\Routing\Exception\MissingControllerException] Controller class fonts could not be found.
+Exception Attributes: array (
+  'class' => 'fonts',
+  'plugin' => 'CakeTeaster',
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /CakeTeaster/cake_teaster/fonts/glyphicons-halflings-regular.woff
+Stack Trace:
+#0 /var/www/CakeTeaster/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-02-26 00:15:18 Error: [Cake\Routing\Exception\MissingControllerException] Controller class fonts could not be found.
+Exception Attributes: array (
+  'class' => 'fonts',
+  'plugin' => 'CakeTeaster',
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /CakeTeaster/cake_teaster/fonts/glyphicons-halflings-regular.ttf
+Stack Trace:
+#0 /var/www/CakeTeaster/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-02-26 00:15:22 Warning: Warning (2): Invalid argument supplied for foreach() in [/var/www/CakeTeaster/plugins/CakeTeaster/src/Template/Testing/index.ctp, line 41]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 138
+include - ROOT/plugins/CakeTeaster/src/Template/Testing/index.ctp, line 41
+Cake\View\View::_evaluate() - CORE/src/View/View.php, line 815
+Cake\View\View::_render() - CORE/src/View/View.php, line 775
+Cake\View\View::render() - CORE/src/View/View.php, line 463
+Cake\Controller\Controller::render() - CORE/src/Controller/Controller.php, line 576
+Cake\Routing\Dispatcher::_invoke() - CORE/src/Routing/Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE/src/Routing/Dispatcher.php, line 87
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2015-02-26 00:15:24 Error: [Cake\Routing\Exception\MissingControllerException] Controller class fonts could not be found.
+Exception Attributes: array (
+  'class' => 'fonts',
+  'plugin' => 'CakeTeaster',
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /CakeTeaster/cake_teaster/fonts/glyphicons-halflings-regular.woff
+Stack Trace:
+#0 /var/www/CakeTeaster/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-02-26 00:15:24 Error: [Cake\Routing\Exception\MissingControllerException] Controller class fonts could not be found.
+Exception Attributes: array (
+  'class' => 'fonts',
+  'plugin' => 'CakeTeaster',
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /CakeTeaster/cake_teaster/fonts/glyphicons-halflings-regular.ttf
+Stack Trace:
+#0 /var/www/CakeTeaster/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-02-26 00:15:48 Warning: Warning (2): Invalid argument supplied for foreach() in [/var/www/CakeTeaster/plugins/CakeTeaster/src/Template/Testing/index.ctp, line 37]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 138
+include - ROOT/plugins/CakeTeaster/src/Template/Testing/index.ctp, line 37
+Cake\View\View::_evaluate() - CORE/src/View/View.php, line 815
+Cake\View\View::_render() - CORE/src/View/View.php, line 775
+Cake\View\View::render() - CORE/src/View/View.php, line 463
+Cake\Controller\Controller::render() - CORE/src/Controller/Controller.php, line 576
+Cake\Routing\Dispatcher::_invoke() - CORE/src/Routing/Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE/src/Routing/Dispatcher.php, line 87
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2015-02-26 00:15:49 Error: [Cake\Routing\Exception\MissingControllerException] Controller class fonts could not be found.
+Exception Attributes: array (
+  'class' => 'fonts',
+  'plugin' => 'CakeTeaster',
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /CakeTeaster/cake_teaster/fonts/glyphicons-halflings-regular.woff
+Stack Trace:
+#0 /var/www/CakeTeaster/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-02-26 00:15:50 Error: [Cake\Routing\Exception\MissingControllerException] Controller class fonts could not be found.
+Exception Attributes: array (
+  'class' => 'fonts',
+  'plugin' => 'CakeTeaster',
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /CakeTeaster/cake_teaster/fonts/glyphicons-halflings-regular.ttf
+Stack Trace:
+#0 /var/www/CakeTeaster/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-02-26 00:16:16 Warning: Warning (2): Invalid argument supplied for foreach() in [/var/www/CakeTeaster/plugins/CakeTeaster/src/Template/Testing/index.ctp, line 37]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 138
+include - ROOT/plugins/CakeTeaster/src/Template/Testing/index.ctp, line 37
+Cake\View\View::_evaluate() - CORE/src/View/View.php, line 815
+Cake\View\View::_render() - CORE/src/View/View.php, line 775
+Cake\View\View::render() - CORE/src/View/View.php, line 463
+Cake\Controller\Controller::render() - CORE/src/Controller/Controller.php, line 576
+Cake\Routing\Dispatcher::_invoke() - CORE/src/Routing/Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE/src/Routing/Dispatcher.php, line 87
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2015-02-26 00:16:17 Error: [Cake\Routing\Exception\MissingControllerException] Controller class fonts could not be found.
+Exception Attributes: array (
+  'class' => 'fonts',
+  'plugin' => 'CakeTeaster',
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /CakeTeaster/cake_teaster/fonts/glyphicons-halflings-regular.woff
+Stack Trace:
+#0 /var/www/CakeTeaster/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-02-26 00:16:18 Error: [Cake\Routing\Exception\MissingControllerException] Controller class fonts could not be found.
+Exception Attributes: array (
+  'class' => 'fonts',
+  'plugin' => 'CakeTeaster',
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /CakeTeaster/cake_teaster/fonts/glyphicons-halflings-regular.ttf
+Stack Trace:
+#0 /var/www/CakeTeaster/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+

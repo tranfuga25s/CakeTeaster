@@ -74,7 +74,7 @@ return [
      * enable timestamping regardless of debug value.
      */
     'Asset' => [
-        // 'timestamp' => true,
+         'timestamp' => true,
     ],
 
     /**
@@ -210,18 +210,18 @@ return [
     'Datasources' => [
         'default' => [
             'className' => 'Cake\Database\Connection',
-            'driver' => 'Cake\Database\Driver\Mysql',
+            'driver' => 'Cake\Database\Driver\Sqlite',
             'persistent' => false,
-            'host' => 'localhost',
+            //'host' => 'localhost',
             /*
             * CakePHP will use the default DB port based on the driver selected
             * MySQL on MAMP uses port 8889, MAMP users will want to uncomment
             * the following line and set the port accordingly
             */
             //'port' => 'nonstandard_port_number',
-            'username' => 'my_app',
-            'password' => 'secret',
-            'database' => 'my_app',
+            //'username' => 'my_app',
+            //'password' => 'secret',
+            'database' => '/var/www/CakeTeaster/config/cake_teaster.sqlite',
             'encoding' => 'utf8',
             'timezone' => 'UTC',
             'cacheMetadata' => true,
@@ -251,13 +251,13 @@ return [
          */
         'test' => [
             'className' => 'Cake\Database\Connection',
-            'driver' => 'Cake\Database\Driver\Mysql',
+            'driver' => 'Cake\Database\Driver\Sqlite',
             'persistent' => false,
-            'host' => 'localhost',
+            //'host' => 'localhost',
             //'port' => 'nonstandard_port_number',
-            'username' => 'my_app',
-            'password' => 'secret',
-            'database' => 'test_myapp',
+            //'username' => 'my_app',
+            //'password' => 'secret',
+            'database' => '/var/www/CakeTeaster/test_cake_teaster.sqlite',
             'encoding' => 'utf8',
             'timezone' => 'UTC',
             'cacheMetadata' => true,
