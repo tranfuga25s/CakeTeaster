@@ -15,7 +15,6 @@
 namespace Cake\Cache\Engine;
 
 use Cake\Cache\CacheEngine;
-use Cake\Core\Configure;
 use Cake\Utility\Inflector;
 use Exception;
 use LogicException;
@@ -88,7 +87,7 @@ class FileEngine extends CacheEngine
         parent::init($config);
 
         if ($this->_config['path'] === null) {
-            $this->_config['path'] = sys_get_temp_dir();
+            $this->_config['path'] = sys_get_temp_dir() . DS . 'cake_cache' . DS;
         }
         if (DS === '\\') {
             $this->_config['isWindows'] = true;

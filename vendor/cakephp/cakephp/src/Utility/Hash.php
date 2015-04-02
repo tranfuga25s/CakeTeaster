@@ -486,7 +486,7 @@ class Hash
      * @param array $data Source array from which to extract the data
      * @param array $paths An array containing one or more Hash::extract()-style key paths
      * @param string $format Format string into which values will be inserted, see sprintf()
-     * @return array An array of strings extracted from `$path` and formatted with `$format`
+     * @return void|array An array of strings extracted from `$path` and formatted with `$format`
      * @link http://book.cakephp.org/3.0/en/core-libraries/hash.html#Hash::format
      * @see sprintf()
      * @see Hash::extract()
@@ -719,7 +719,7 @@ class Hash
      * Merge helper function to reduce duplicated code between merge() and expand().
      *
      * @param array $stack The stack of operations to work with.
-     * @param array &$return The return value to operate on.
+     * @param array $return The return value to operate on.
      * @return void
      */
     protected static function _merge($stack, &$return)
@@ -798,10 +798,14 @@ class Hash
         $depth = [];
         if (is_array($data) && reset($data) !== false) {
             foreach ($data as $value) {
-                $depth[] = static::dimensions((array)$value) + 1;
+                if (is_array($value)) {
+                    $depth[] = static::dimensions($value) + 1;
+                } else {
+                    $depth[] = 1;
+                }
             }
         }
-        return max($depth);
+        return empty($depth) ? 0 : max($depth);
     }
 
     /**
@@ -875,7 +879,7 @@ class Hash
      * - `numeric` Compare values numerically
      * - `string` Compare values as strings
      * - `natural` Compare items as strings using "natural ordering" in a human friendly way.
-     *   Will sort foo10 below foo2 as an example. Requires PHP 5.4 or greater or it will fallback to 'regular'
+     *   Will sort foo10 below foo2 as an example.
      *
      * @param array $data An array of data to sort
      * @param string $path A Set-compatible path to the array value

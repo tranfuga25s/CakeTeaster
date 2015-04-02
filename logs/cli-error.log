@@ -1,0 +1,12 @@
+2015-04-02 19:15:18 Error: [Cake\Console\Exception\MissingShellException] Shell class for "Test" could not be found.
+Exception Attributes: array (
+  'class' => 'Test',
+)
+Stack Trace:
+#0 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php(197): Cake\Console\ShellDispatcher->findShell('test')
+#1 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php(171): Cake\Console\ShellDispatcher->_dispatch()
+#2 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Console/ShellDispatcher.php(122): Cake\Console\ShellDispatcher->dispatch()
+#3 /var/www/CakeTeaster/bin/cake.php(20): Cake\Console\ShellDispatcher::run(Array)
+#4 {main}
+
+

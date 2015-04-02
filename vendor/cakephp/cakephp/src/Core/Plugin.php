@@ -136,8 +136,8 @@ class Plugin
 
         if (empty($config['path'])) {
             $paths = App::path('Plugin');
+            $pluginPath = str_replace('/', DS, $plugin);
             foreach ($paths as $path) {
-                $pluginPath = str_replace('/', DS, $plugin);
                 if (is_dir($path . $pluginPath)) {
                     $config['path'] = $path . $pluginPath . DS;
                     break;
@@ -156,10 +156,6 @@ class Plugin
 
         static::$_plugins[$plugin] = $config;
 
-        if ($config['bootstrap'] === true) {
-            static::bootstrap($plugin);
-        }
-
         if ($config['autoload'] === true) {
             if (empty(static::$_loader)) {
                 static::$_loader = new ClassLoader;
@@ -173,6 +169,10 @@ class Plugin
                 str_replace('/', '\\', $plugin) . '\Test',
                 $config['path'] . 'tests' . DS
             );
+        }
+
+        if ($config['bootstrap'] === true) {
+            static::bootstrap($plugin);
         }
     }
 

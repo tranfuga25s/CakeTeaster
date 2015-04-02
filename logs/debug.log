@@ -2742,3 +2742,161 @@ Cake\Routing\Dispatcher::dispatch() - CORE/src/Routing/Dispatcher.php, line 87
 
 
 
+2015-02-26 22:43:02 Notice: Notice (8): Undefined variable: store_statistics in [/var/www/CakeTeaster/plugins/CakeTeaster/src/Template/Testing/index.ctp, line 16]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 138
+include - ROOT/plugins/CakeTeaster/src/Template/Testing/index.ctp, line 16
+Cake\View\View::_evaluate() - CORE/src/View/View.php, line 815
+Cake\View\View::_render() - CORE/src/View/View.php, line 775
+Cake\View\View::render() - CORE/src/View/View.php, line 463
+Cake\Controller\Controller::render() - CORE/src/Controller/Controller.php, line 576
+Cake\Routing\Dispatcher::_invoke() - CORE/src/Routing/Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE/src/Routing/Dispatcher.php, line 87
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2015-02-26 22:43:02 Notice: Notice (8): Undefined variable: create_snapshots in [/var/www/CakeTeaster/plugins/CakeTeaster/src/Template/Testing/index.ctp, line 23]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 138
+include - ROOT/plugins/CakeTeaster/src/Template/Testing/index.ctp, line 23
+Cake\View\View::_evaluate() - CORE/src/View/View.php, line 815
+Cake\View\View::_render() - CORE/src/View/View.php, line 775
+Cake\View\View::render() - CORE/src/View/View.php, line 463
+Cake\Controller\Controller::render() - CORE/src/Controller/Controller.php, line 576
+Cake\Routing\Dispatcher::_invoke() - CORE/src/Routing/Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE/src/Routing/Dispatcher.php, line 87
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2015-02-26 22:43:02 Notice: Notice (8): Undefined variable: sandbox_errors in [/var/www/CakeTeaster/plugins/CakeTeaster/src/Template/Testing/index.ctp, line 30]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 138
+include - ROOT/plugins/CakeTeaster/src/Template/Testing/index.ctp, line 30
+Cake\View\View::_evaluate() - CORE/src/View/View.php, line 815
+Cake\View\View::_render() - CORE/src/View/View.php, line 775
+Cake\View\View::render() - CORE/src/View/View.php, line 463
+Cake\Controller\Controller::render() - CORE/src/Controller/Controller.php, line 576
+Cake\Routing\Dispatcher::_invoke() - CORE/src/Routing/Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE/src/Routing/Dispatcher.php, line 87
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2015-02-26 22:43:02 Notice: Notice (8): Undefined variable: xml_configuration_files in [/var/www/CakeTeaster/plugins/CakeTeaster/src/Template/Testing/index.ctp, line 37]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 138
+include - ROOT/plugins/CakeTeaster/src/Template/Testing/index.ctp, line 37
+Cake\View\View::_evaluate() - CORE/src/View/View.php, line 815
+Cake\View\View::_render() - CORE/src/View/View.php, line 775
+Cake\View\View::render() - CORE/src/View/View.php, line 463
+Cake\Controller\Controller::render() - CORE/src/Controller/Controller.php, line 576
+Cake\Routing\Dispatcher::_invoke() - CORE/src/Routing/Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE/src/Routing/Dispatcher.php, line 87
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2015-04-02 15:25:32 Notice: Notice (8): Undefined variable: cakeDescription in [/var/www/CakeTeaster/src/Template/Layout/default.ctp, line 22]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 138
+include - APP/Template/Layout/default.ctp, line 22
+Cake\View\View::_evaluate() - CORE/src/View/View.php, line 815
+Cake\View\View::_render() - CORE/src/View/View.php, line 775
+Cake\View\View::renderLayout() - CORE/src/View/View.php, line 509
+Cake\View\View::render() - CORE/src/View/View.php, line 471
+Cake\Controller\Controller::render() - CORE/src/Controller/Controller.php, line 576
+App\Controller\PagesController::display() - APP/Controller/PagesController.php, line 57
+Cake\Controller\Controller::invokeAction() - CORE/src/Controller/Controller.php, line 405
+Cake\Routing\Dispatcher::_invoke() - CORE/src/Routing/Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE/src/Routing/Dispatcher.php, line 87
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2015-04-02 15:26:46 Notice: Notice (8): Undefined variable: cakeDescription in [/var/www/CakeTeaster/src/Template/Layout/default.ctp, line 22]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 138
+include - APP/Template/Layout/default.ctp, line 22
+Cake\View\View::_evaluate() - CORE/src/View/View.php, line 815
+Cake\View\View::_render() - CORE/src/View/View.php, line 775
+Cake\View\View::renderLayout() - CORE/src/View/View.php, line 509
+Cake\View\View::render() - CORE/src/View/View.php, line 471
+Cake\Controller\Controller::render() - CORE/src/Controller/Controller.php, line 576
+App\Controller\PagesController::display() - APP/Controller/PagesController.php, line 57
+Cake\Controller\Controller::invokeAction() - CORE/src/Controller/Controller.php, line 405
+Cake\Routing\Dispatcher::_invoke() - CORE/src/Routing/Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE/src/Routing/Dispatcher.php, line 87
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2015-04-02 15:26:53 Notice: Notice (8): Undefined variable: cakeDescription in [/var/www/CakeTeaster/src/Template/Layout/default.ctp, line 22]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 138
+include - APP/Template/Layout/default.ctp, line 22
+Cake\View\View::_evaluate() - CORE/src/View/View.php, line 815
+Cake\View\View::_render() - CORE/src/View/View.php, line 775
+Cake\View\View::renderLayout() - CORE/src/View/View.php, line 509
+Cake\View\View::render() - CORE/src/View/View.php, line 471
+Cake\Controller\Controller::render() - CORE/src/Controller/Controller.php, line 576
+App\Controller\PagesController::display() - APP/Controller/PagesController.php, line 57
+Cake\Controller\Controller::invokeAction() - CORE/src/Controller/Controller.php, line 405
+Cake\Routing\Dispatcher::_invoke() - CORE/src/Routing/Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE/src/Routing/Dispatcher.php, line 87
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2015-04-02 15:27:12 Notice: Notice (8): Undefined variable: cakeDescription in [/var/www/CakeTeaster/src/Template/Layout/default.ctp, line 22]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 138
+include - APP/Template/Layout/default.ctp, line 22
+Cake\View\View::_evaluate() - CORE/src/View/View.php, line 815
+Cake\View\View::_render() - CORE/src/View/View.php, line 775
+Cake\View\View::renderLayout() - CORE/src/View/View.php, line 509
+Cake\View\View::render() - CORE/src/View/View.php, line 471
+Cake\Controller\Controller::render() - CORE/src/Controller/Controller.php, line 576
+App\Controller\PagesController::display() - APP/Controller/PagesController.php, line 57
+Cake\Controller\Controller::invokeAction() - CORE/src/Controller/Controller.php, line 405
+Cake\Routing\Dispatcher::_invoke() - CORE/src/Routing/Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE/src/Routing/Dispatcher.php, line 87
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2015-04-02 15:28:28 Notice: Notice (8): Undefined variable: cakeDescription in [/var/www/CakeTeaster/src/Template/Layout/default.ctp, line 22]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 138
+include - APP/Template/Layout/default.ctp, line 22
+Cake\View\View::_evaluate() - CORE/src/View/View.php, line 815
+Cake\View\View::_render() - CORE/src/View/View.php, line 775
+Cake\View\View::renderLayout() - CORE/src/View/View.php, line 509
+Cake\View\View::render() - CORE/src/View/View.php, line 471
+Cake\Controller\Controller::render() - CORE/src/Controller/Controller.php, line 576
+App\Controller\PagesController::display() - APP/Controller/PagesController.php, line 57
+Cake\Controller\Controller::invokeAction() - CORE/src/Controller/Controller.php, line 405
+Cake\Routing\Dispatcher::_invoke() - CORE/src/Routing/Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE/src/Routing/Dispatcher.php, line 87
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2015-04-02 15:30:41 Notice: Notice (8): Undefined variable: cakeDescription in [/var/www/CakeTeaster/src/Template/Layout/default.ctp, line 22]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 138
+include - APP/Template/Layout/default.ctp, line 22
+Cake\View\View::_evaluate() - CORE/src/View/View.php, line 815
+Cake\View\View::_render() - CORE/src/View/View.php, line 775
+Cake\View\View::renderLayout() - CORE/src/View/View.php, line 509
+Cake\View\View::render() - CORE/src/View/View.php, line 471
+Cake\Controller\Controller::render() - CORE/src/Controller/Controller.php, line 576
+App\Controller\PagesController::display() - APP/Controller/PagesController.php, line 57
+Cake\Controller\Controller::invokeAction() - CORE/src/Controller/Controller.php, line 405
+Cake\Routing\Dispatcher::_invoke() - CORE/src/Routing/Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE/src/Routing/Dispatcher.php, line 87
+[main] - ROOT/webroot/index.php, line 37
+
+
+
