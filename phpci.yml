@@ -1,0 +1,32 @@
+build_settings:
+    ignore:
+        - "vendor"
+        - "tests"
+        - "webroot"
+        - "logs"
+        - "bin"
+        - "tmp"
+setup:
+    composer:
+        action: "install"
+test:
+    php_docblock_checker:
+        allowed_warnings: -1
+    php_loc:
+        directory: "src"
+    php_code_sniffer:
+        allowed_errors: -1
+        standard: "PSR1,PSR2"
+    php_mess_detector:
+        rules:
+          - "cleancode"
+          - "controversial"
+          - "codesize"
+          - "design"
+          - "naming"
+          - "unusedcode"
+        allow_failures: true
+        zero_config: true # do not make build as failed if something was detected
+    php_unit:
+        config:
+            - "phpunit.xml"

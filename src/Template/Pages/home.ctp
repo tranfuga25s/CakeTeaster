@@ -13,7 +13,7 @@ $this->assign('title', __("Inicio"));
             </div>
             <div class="list-group">
                 <?= $this->Html->link(__("Inicio"), "/", ['class' => 'list-group-item'] ); ?>
-                <?= $this->Html->link(__("Mis proyectos"), "/", ['class' => 'list-group-item'] ); ?>
+                <?= $this->Html->link(__("Mis proyectos"), ['controller' => 'project'], ['class' => 'list-group-item'] ); ?>
                 <?= $this->Html->link(__("Todos los proyectos"), "/", ['class' => 'list-group-item'] ); ?>
             </div>
         </div>

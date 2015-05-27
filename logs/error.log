@@ -3253,3 +3253,229 @@ Stack Trace:
 #8 {main}
 
 
+2015-05-26 23:51:01 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Proyectos could not be found.
+Exception Attributes: array (
+  'class' => 'Proyectos',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /proyectos
+Stack Trace:
+#0 /var/www/CakeTeaster/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-05-27 00:01:54 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Proyectos could not be found.
+Exception Attributes: array (
+  'class' => 'Proyectos',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /proyectos
+Stack Trace:
+#0 /var/www/CakeTeaster/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-05-27 00:01:58 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Projects could not be found.
+Exception Attributes: array (
+  'class' => 'Projects',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /projects
+Stack Trace:
+#0 /var/www/CakeTeaster/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-05-27 00:02:04 Error: [Cake\Database\Exception] Cannot describe users. It has 0 columns.
+Request URL: /project
+Stack Trace:
+#0 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Database/Schema/CachedCollection.php(65): Cake\Database\Schema\Collection->describe('users', Array)
+#1 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/ORM/Table.php(426): Cake\Database\Schema\CachedCollection->describe('users')
+#2 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/ORM/Table.php(502): Cake\ORM\Table->schema()
+#3 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/ORM/Association/BelongsTo.php(167): Cake\ORM\Table->primaryKey()
+#4 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/ORM/Association.php(493): Cake\ORM\Association\BelongsTo->_joinCondition(Array)
+#5 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/ORM/EagerLoader.php(323): Cake\ORM\Association->attachTo(Object(Cake\ORM\Query), Array)
+#6 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/ORM/Query.php(682): Cake\ORM\EagerLoader->attachAssociations(Object(Cake\ORM\Query), Object(App\Model\Table\ProjectTable), true)
+#7 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/ORM/Query.php(638): Cake\ORM\Query->_transformQuery()
+#8 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Database/Driver/Sqlite.php(91): Cake\ORM\Query->sql()
+#9 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Database/Connection.php(220): Cake\Database\Driver\Sqlite->prepare(Object(Cake\ORM\Query))
+#10 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Database/Connection.php(272): Cake\Database\Connection->prepare(Object(Cake\ORM\Query))
+#11 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Database/Query.php(175): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#12 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/ORM/Query.php(657): Cake\Database\Query->execute()
+#13 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Datasource/QueryTrait.php(218): Cake\ORM\Query->_execute()
+#14 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/ORM/Query.php(608): Cake\ORM\Query->_all()
+#15 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Controller/Component/PaginatorComponent.php(169): Cake\ORM\Query->all()
+#16 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Controller/Controller.php(640): Cake\Controller\Component\PaginatorComponent->paginate(Object(App\Model\Table\ProjectTable), Array)
+#17 /var/www/CakeTeaster/src/Controller/ProjectController.php(24): Cake\Controller\Controller->paginate(Object(App\Model\Table\ProjectTable))
+#18 [internal function]: App\Controller\ProjectController->index()
+#19 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Controller/Controller.php(410): call_user_func_array(Array, Array)
+#20 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#21 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\ProjectController))
+#22 /var/www/CakeTeaster/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#23 {main}
+
+
+2015-05-27 00:02:29 Error: [Cake\Database\Exception] Cannot describe users. It has 0 columns.
+Request URL: /project
+Stack Trace:
+#0 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Database/Schema/CachedCollection.php(65): Cake\Database\Schema\Collection->describe('users', Array)
+#1 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/ORM/Table.php(426): Cake\Database\Schema\CachedCollection->describe('users')
+#2 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/ORM/Table.php(502): Cake\ORM\Table->schema()
+#3 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/ORM/Association/BelongsTo.php(167): Cake\ORM\Table->primaryKey()
+#4 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/ORM/Association.php(493): Cake\ORM\Association\BelongsTo->_joinCondition(Array)
+#5 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/ORM/EagerLoader.php(323): Cake\ORM\Association->attachTo(Object(Cake\ORM\Query), Array)
+#6 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/ORM/Query.php(682): Cake\ORM\EagerLoader->attachAssociations(Object(Cake\ORM\Query), Object(App\Model\Table\ProjectTable), true)
+#7 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/ORM/Query.php(638): Cake\ORM\Query->_transformQuery()
+#8 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Database/Driver/Sqlite.php(91): Cake\ORM\Query->sql()
+#9 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Database/Connection.php(220): Cake\Database\Driver\Sqlite->prepare(Object(Cake\ORM\Query))
+#10 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Database/Connection.php(272): Cake\Database\Connection->prepare(Object(Cake\ORM\Query))
+#11 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Database/Query.php(175): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#12 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/ORM/Query.php(657): Cake\Database\Query->execute()
+#13 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Datasource/QueryTrait.php(218): Cake\ORM\Query->_execute()
+#14 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/ORM/Query.php(608): Cake\ORM\Query->_all()
+#15 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Controller/Component/PaginatorComponent.php(169): Cake\ORM\Query->all()
+#16 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Controller/Controller.php(640): Cake\Controller\Component\PaginatorComponent->paginate(Object(App\Model\Table\ProjectTable), Array)
+#17 /var/www/CakeTeaster/src/Controller/ProjectController.php(24): Cake\Controller\Controller->paginate(Object(App\Model\Table\ProjectTable))
+#18 [internal function]: App\Controller\ProjectController->index()
+#19 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Controller/Controller.php(410): call_user_func_array(Array, Array)
+#20 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#21 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\ProjectController))
+#22 /var/www/CakeTeaster/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#23 {main}
+
+
+2015-05-27 00:02:34 Error: [Cake\Database\Exception] Cannot describe users. It has 0 columns.
+Request URL: /project/index
+Stack Trace:
+#0 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Database/Schema/CachedCollection.php(65): Cake\Database\Schema\Collection->describe('users', Array)
+#1 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/ORM/Table.php(426): Cake\Database\Schema\CachedCollection->describe('users')
+#2 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/ORM/Table.php(502): Cake\ORM\Table->schema()
+#3 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/ORM/Association/BelongsTo.php(167): Cake\ORM\Table->primaryKey()
+#4 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/ORM/Association.php(493): Cake\ORM\Association\BelongsTo->_joinCondition(Array)
+#5 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/ORM/EagerLoader.php(323): Cake\ORM\Association->attachTo(Object(Cake\ORM\Query), Array)
+#6 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/ORM/Query.php(682): Cake\ORM\EagerLoader->attachAssociations(Object(Cake\ORM\Query), Object(App\Model\Table\ProjectTable), true)
+#7 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/ORM/Query.php(638): Cake\ORM\Query->_transformQuery()
+#8 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Database/Driver/Sqlite.php(91): Cake\ORM\Query->sql()
+#9 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Database/Connection.php(220): Cake\Database\Driver\Sqlite->prepare(Object(Cake\ORM\Query))
+#10 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Database/Connection.php(272): Cake\Database\Connection->prepare(Object(Cake\ORM\Query))
+#11 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Database/Query.php(175): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#12 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/ORM/Query.php(657): Cake\Database\Query->execute()
+#13 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Datasource/QueryTrait.php(218): Cake\ORM\Query->_execute()
+#14 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/ORM/Query.php(608): Cake\ORM\Query->_all()
+#15 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Controller/Component/PaginatorComponent.php(169): Cake\ORM\Query->all()
+#16 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Controller/Controller.php(640): Cake\Controller\Component\PaginatorComponent->paginate(Object(App\Model\Table\ProjectTable), Array)
+#17 /var/www/CakeTeaster/src/Controller/ProjectController.php(24): Cake\Controller\Controller->paginate(Object(App\Model\Table\ProjectTable))
+#18 [internal function]: App\Controller\ProjectController->index()
+#19 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Controller/Controller.php(410): call_user_func_array(Array, Array)
+#20 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#21 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\ProjectController))
+#22 /var/www/CakeTeaster/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#23 {main}
+
+
+2015-05-27 00:04:11 Error: [Cake\Database\Exception] Cannot describe project. It has 0 columns.
+Request URL: /project/index
+Stack Trace:
+#0 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Database/Schema/CachedCollection.php(65): Cake\Database\Schema\Collection->describe('project', Array)
+#1 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/ORM/Table.php(426): Cake\Database\Schema\CachedCollection->describe('project')
+#2 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/ORM/Query.php(141): Cake\ORM\Table->schema()
+#3 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/ORM/Query.php(123): Cake\ORM\Query->addDefaultTypes(Object(App\Model\Table\ProjectTable))
+#4 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/ORM/Table.php(1164): Cake\ORM\Query->__construct(Object(Cake\Database\Connection), Object(App\Model\Table\ProjectTable))
+#5 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/ORM/Table.php(883): Cake\ORM\Table->query()
+#6 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Controller/Component/PaginatorComponent.php(164): Cake\ORM\Table->find('all', Array)
+#7 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Controller/Controller.php(640): Cake\Controller\Component\PaginatorComponent->paginate(Object(App\Model\Table\ProjectTable), Array)
+#8 /var/www/CakeTeaster/src/Controller/ProjectController.php(24): Cake\Controller\Controller->paginate(Object(App\Model\Table\ProjectTable))
+#9 [internal function]: App\Controller\ProjectController->index()
+#10 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Controller/Controller.php(410): call_user_func_array(Array, Array)
+#11 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#12 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\ProjectController))
+#13 /var/www/CakeTeaster/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#14 {main}
+
+
+2015-05-27 00:05:22 Error: [Cake\Database\Exception] Cannot describe project. It has 0 columns.
+Request URL: /project/index
+Stack Trace:
+#0 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Database/Schema/CachedCollection.php(65): Cake\Database\Schema\Collection->describe('project', Array)
+#1 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/ORM/Table.php(426): Cake\Database\Schema\CachedCollection->describe('project')
+#2 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/ORM/Query.php(141): Cake\ORM\Table->schema()
+#3 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/ORM/Query.php(123): Cake\ORM\Query->addDefaultTypes(Object(App\Model\Table\ProjectTable))
+#4 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/ORM/Table.php(1164): Cake\ORM\Query->__construct(Object(Cake\Database\Connection), Object(App\Model\Table\ProjectTable))
+#5 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/ORM/Table.php(883): Cake\ORM\Table->query()
+#6 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Controller/Component/PaginatorComponent.php(164): Cake\ORM\Table->find('all', Array)
+#7 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Controller/Controller.php(640): Cake\Controller\Component\PaginatorComponent->paginate(Object(App\Model\Table\ProjectTable), Array)
+#8 /var/www/CakeTeaster/src/Controller/ProjectController.php(24): Cake\Controller\Controller->paginate(Object(App\Model\Table\ProjectTable))
+#9 [internal function]: App\Controller\ProjectController->index()
+#10 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Controller/Controller.php(410): call_user_func_array(Array, Array)
+#11 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#12 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\ProjectController))
+#13 /var/www/CakeTeaster/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#14 {main}
+
+
+2015-05-27 00:05:34 Error: [Cake\Database\Exception] Cannot describe project. It has 0 columns.
+Request URL: /project/index
+Stack Trace:
+#0 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Database/Schema/CachedCollection.php(65): Cake\Database\Schema\Collection->describe('project', Array)
+#1 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/ORM/Table.php(426): Cake\Database\Schema\CachedCollection->describe('project')
+#2 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/ORM/Query.php(141): Cake\ORM\Table->schema()
+#3 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/ORM/Query.php(123): Cake\ORM\Query->addDefaultTypes(Object(App\Model\Table\ProjectTable))
+#4 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/ORM/Table.php(1164): Cake\ORM\Query->__construct(Object(Cake\Database\Connection), Object(App\Model\Table\ProjectTable))
+#5 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/ORM/Table.php(883): Cake\ORM\Table->query()
+#6 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Controller/Component/PaginatorComponent.php(164): Cake\ORM\Table->find('all', Array)
+#7 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Controller/Controller.php(640): Cake\Controller\Component\PaginatorComponent->paginate(Object(App\Model\Table\ProjectTable), Array)
+#8 /var/www/CakeTeaster/src/Controller/ProjectController.php(24): Cake\Controller\Controller->paginate(Object(App\Model\Table\ProjectTable))
+#9 [internal function]: App\Controller\ProjectController->index()
+#10 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Controller/Controller.php(410): call_user_func_array(Array, Array)
+#11 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#12 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\ProjectController))
+#13 /var/www/CakeTeaster/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#14 {main}
+
+
+2015-05-27 00:06:05 Error: [Cake\Database\Exception] Cannot describe project. It has 0 columns.
+Request URL: /project/index
+Stack Trace:
+#0 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Database/Schema/CachedCollection.php(65): Cake\Database\Schema\Collection->describe('project', Array)
+#1 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/ORM/Table.php(426): Cake\Database\Schema\CachedCollection->describe('project')
+#2 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/ORM/Query.php(141): Cake\ORM\Table->schema()
+#3 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/ORM/Query.php(123): Cake\ORM\Query->addDefaultTypes(Object(App\Model\Table\ProjectTable))
+#4 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/ORM/Table.php(1164): Cake\ORM\Query->__construct(Object(Cake\Database\Connection), Object(App\Model\Table\ProjectTable))
+#5 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/ORM/Table.php(883): Cake\ORM\Table->query()
+#6 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Controller/Component/PaginatorComponent.php(164): Cake\ORM\Table->find('all', Array)
+#7 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Controller/Controller.php(640): Cake\Controller\Component\PaginatorComponent->paginate(Object(App\Model\Table\ProjectTable), Array)
+#8 /var/www/CakeTeaster/src/Controller/ProjectController.php(24): Cake\Controller\Controller->paginate(Object(App\Model\Table\ProjectTable))
+#9 [internal function]: App\Controller\ProjectController->index()
+#10 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Controller/Controller.php(410): call_user_func_array(Array, Array)
+#11 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#12 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\ProjectController))
+#13 /var/www/CakeTeaster/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#14 {main}
+
+
+2015-05-27 00:06:26 Error: [Cake\Database\Exception] Cannot describe project. It has 0 columns.
+Request URL: /project/index
+Stack Trace:
+#0 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Database/Schema/CachedCollection.php(65): Cake\Database\Schema\Collection->describe('project', Array)
+#1 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/ORM/Table.php(426): Cake\Database\Schema\CachedCollection->describe('project')
+#2 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/ORM/Query.php(141): Cake\ORM\Table->schema()
+#3 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/ORM/Query.php(123): Cake\ORM\Query->addDefaultTypes(Object(App\Model\Table\ProjectTable))
+#4 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/ORM/Table.php(1164): Cake\ORM\Query->__construct(Object(Cake\Database\Connection), Object(App\Model\Table\ProjectTable))
+#5 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/ORM/Table.php(883): Cake\ORM\Table->query()
+#6 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Controller/Component/PaginatorComponent.php(164): Cake\ORM\Table->find('all', Array)
+#7 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Controller/Controller.php(640): Cake\Controller\Component\PaginatorComponent->paginate(Object(App\Model\Table\ProjectTable), Array)
+#8 /var/www/CakeTeaster/src/Controller/ProjectController.php(24): Cake\Controller\Controller->paginate(Object(App\Model\Table\ProjectTable))
+#9 [internal function]: App\Controller\ProjectController->index()
+#10 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Controller/Controller.php(410): call_user_func_array(Array, Array)
+#11 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#12 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\ProjectController))
+#13 /var/www/CakeTeaster/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#14 {main}
+
+
