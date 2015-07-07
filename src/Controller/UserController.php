@@ -6,7 +6,7 @@ use App\Controller\AppController;
 /**
  * User Controller
  *
- * @property \App\Model\Table\UserTable $User
+ * @property \App\Model\Table\UsersTable $Users
  */
 class UserController extends AppController
 {
@@ -18,7 +18,7 @@ class UserController extends AppController
      */
     public function index()
     {
-        $this->set('user', $this->paginate($this->User));
+        $this->set('user', $this->paginate($this->Users));
         $this->set('_serialize', ['user']);
     }
 
@@ -31,7 +31,7 @@ class UserController extends AppController
      */
     public function view($id = null)
     {
-        $user = $this->User->get($id, [
+        $user = $this->Users->get($id, [
             'contain' => []
         ]);
         $this->set('user', $user);
@@ -50,9 +50,7 @@ class UserController extends AppController
         if (!$this->User->exists([$this->User->primaryKey() => $id])) {
             throw new \Cake\Network\Exception\NotFoundException(__("No se encuentra el usuario indicado"));
         }
-        $user = $this->User->get($id, [
-            'contain' => []
-        ]);
+        $user = $this->User->get($id);
         $this->set('user', $user);
         $this->set('_serialize', ['user']);
     }

@@ -10,7 +10,7 @@ use Cake\Validation\Validator;
 /**
  * User Model
  */
-class UserTable extends Table
+class UsersTable extends Table
 {
 
     /**
@@ -21,7 +21,7 @@ class UserTable extends Table
      */
     public function initialize(array $config)
     {
-        $this->table('user');
+        $this->table('users');
         $this->displayField('nombre');
         $this->primaryKey('id');
         $this->addBehavior('Timestamp');

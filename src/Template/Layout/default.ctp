@@ -53,7 +53,7 @@
                 </form>
                 <ul class="nav navbar-nav navbar-right">
                   <li><?= $this->Html->link(__("Ayuda"), ['controller' => 'pages', 'ayuda']); ?></li>
-                  <li><?= $this->Html->link(__("Perfil"), ['controller' => 'user', 'action' => 'perfil'] ); ?>
+                  <li><?= $this->Html->link(__("Perfil"), ['controller' => 'user', 'action' => 'profile'] ); ?>
                 </ul>
               </div>
             </div>

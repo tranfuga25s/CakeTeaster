@@ -3479,3 +3479,290 @@ Stack Trace:
 #14 {main}
 
 
+2015-07-07 10:53:04 Error: [Cake\Controller\Exception\MissingActionException] Action UserController::perfil() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'UserController',
+  'action' => 'perfil',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /CakeTeaster/user/perfil
+Stack Trace:
+#0 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\UserController))
+#2 /var/www/CakeTeaster/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2015-07-07 10:53:58 Error: [Cake\Controller\Exception\MissingActionException] Action UserController::perfil() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'UserController',
+  'action' => 'perfil',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /CakeTeaster/user/perfil
+Stack Trace:
+#0 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\UserController))
+#2 /var/www/CakeTeaster/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2015-07-07 10:54:04 Error: [Cake\Database\Exception] Cannot describe user. It has 0 columns.
+Request URL: /CakeTeaster/user/profile
+Stack Trace:
+#0 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Database/Schema/CachedCollection.php(65): Cake\Database\Schema\Collection->describe('user', Array)
+#1 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/ORM/Table.php(426): Cake\Database\Schema\CachedCollection->describe('user')
+#2 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/ORM/Table.php(502): Cake\ORM\Table->schema()
+#3 /var/www/CakeTeaster/src/Controller/UserController.php(50): Cake\ORM\Table->primaryKey()
+#4 [internal function]: App\Controller\UserController->profile()
+#5 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Controller/Controller.php(410): call_user_func_array(Array, Array)
+#6 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#7 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\UserController))
+#8 /var/www/CakeTeaster/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#9 {main}
+
+
+2015-07-07 10:54:33 Error: [Cake\Database\Exception] Cannot describe user. It has 0 columns.
+Request URL: /CakeTeaster/user/profile
+Stack Trace:
+#0 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Database/Schema/CachedCollection.php(65): Cake\Database\Schema\Collection->describe('user', Array)
+#1 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/ORM/Table.php(426): Cake\Database\Schema\CachedCollection->describe('user')
+#2 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/ORM/Table.php(502): Cake\ORM\Table->schema()
+#3 /var/www/CakeTeaster/src/Controller/UserController.php(50): Cake\ORM\Table->primaryKey()
+#4 [internal function]: App\Controller\UserController->profile()
+#5 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Controller/Controller.php(411): call_user_func_array(Array, Array)
+#6 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#7 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\UserController))
+#8 /var/www/CakeTeaster/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#9 {main}
+
+
+2015-07-07 10:58:11 Error: [Cake\Database\Exception] Cannot describe user. It has 0 columns.
+Request URL: /CakeTeaster/user/profile
+Stack Trace:
+#0 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Database/Schema/CachedCollection.php(65): Cake\Database\Schema\Collection->describe('user', Array)
+#1 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/ORM/Table.php(426): Cake\Database\Schema\CachedCollection->describe('user')
+#2 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/ORM/Table.php(502): Cake\ORM\Table->schema()
+#3 /var/www/CakeTeaster/src/Controller/UserController.php(50): Cake\ORM\Table->primaryKey()
+#4 [internal function]: App\Controller\UserController->profile()
+#5 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Controller/Controller.php(411): call_user_func_array(Array, Array)
+#6 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#7 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\UserController))
+#8 /var/www/CakeTeaster/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#9 {main}
+
+
+2015-07-07 10:58:29 Error: [Cake\Database\Exception] Cannot describe user. It has 0 columns.
+Request URL: /CakeTeaster/user/profile
+Stack Trace:
+#0 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Database/Schema/CachedCollection.php(65): Cake\Database\Schema\Collection->describe('user', Array)
+#1 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/ORM/Table.php(426): Cake\Database\Schema\CachedCollection->describe('user')
+#2 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/ORM/Table.php(502): Cake\ORM\Table->schema()
+#3 /var/www/CakeTeaster/src/Controller/UserController.php(50): Cake\ORM\Table->primaryKey()
+#4 [internal function]: App\Controller\UserController->profile()
+#5 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Controller/Controller.php(411): call_user_func_array(Array, Array)
+#6 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#7 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\UserController))
+#8 /var/www/CakeTeaster/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#9 {main}
+
+
+2015-07-07 10:58:49 Error: Fatal Error (1): Call to a member function exists() on boolean in [/var/www/CakeTeaster/src/Controller/UserController.php, line 50]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-07-07 10:58:49 Error: [Cake\Error\FatalErrorException] Call to a member function exists() on boolean
+Request URL: /CakeTeaster/user/profile
+Stack Trace:
+#0 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Call to a membe...', '/var/www/CakeTe...', 50)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-07-07 10:59:00 Error: Fatal Error (1): Call to a member function exists() on boolean in [/var/www/CakeTeaster/src/Controller/UserController.php, line 50]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-07-07 10:59:01 Error: [Cake\Error\FatalErrorException] Call to a member function exists() on boolean
+Request URL: /CakeTeaster/user/profile
+Stack Trace:
+#0 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Call to a membe...', '/var/www/CakeTe...', 50)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-07-07 10:59:13 Error: [Cake\Database\Exception] Cannot describe user. It has 0 columns.
+Request URL: /CakeTeaster/user/profile
+Stack Trace:
+#0 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Database/Schema/CachedCollection.php(65): Cake\Database\Schema\Collection->describe('user', Array)
+#1 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/ORM/Table.php(426): Cake\Database\Schema\CachedCollection->describe('user')
+#2 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/ORM/Table.php(502): Cake\ORM\Table->schema()
+#3 /var/www/CakeTeaster/src/Controller/UserController.php(50): Cake\ORM\Table->primaryKey()
+#4 [internal function]: App\Controller\UserController->profile()
+#5 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Controller/Controller.php(411): call_user_func_array(Array, Array)
+#6 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#7 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\UserController))
+#8 /var/www/CakeTeaster/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#9 {main}
+
+
+2015-07-07 11:00:04 Error: [Cake\Database\Exception] Cannot describe user. It has 0 columns.
+Request URL: /CakeTeaster/user/profile
+Stack Trace:
+#0 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Database/Schema/CachedCollection.php(65): Cake\Database\Schema\Collection->describe('user', Array)
+#1 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/ORM/Table.php(426): Cake\Database\Schema\CachedCollection->describe('user')
+#2 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/ORM/Table.php(502): Cake\ORM\Table->schema()
+#3 /var/www/CakeTeaster/src/Controller/UserController.php(50): Cake\ORM\Table->primaryKey()
+#4 [internal function]: App\Controller\UserController->profile()
+#5 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Controller/Controller.php(411): call_user_func_array(Array, Array)
+#6 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#7 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\UserController))
+#8 /var/www/CakeTeaster/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#9 {main}
+
+
+2015-07-07 11:00:41 Error: [Cake\Database\Exception] Cannot describe user. It has 0 columns.
+Request URL: /CakeTeaster/user/profile
+Stack Trace:
+#0 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Database/Schema/CachedCollection.php(65): Cake\Database\Schema\Collection->describe('user', Array)
+#1 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/ORM/Table.php(426): Cake\Database\Schema\CachedCollection->describe('user')
+#2 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/ORM/Table.php(502): Cake\ORM\Table->schema()
+#3 /var/www/CakeTeaster/src/Controller/UserController.php(50): Cake\ORM\Table->primaryKey()
+#4 [internal function]: App\Controller\UserController->profile()
+#5 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Controller/Controller.php(411): call_user_func_array(Array, Array)
+#6 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#7 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\UserController))
+#8 /var/www/CakeTeaster/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#9 {main}
+
+
+2015-07-07 11:02:01 Error: [Cake\Database\Exception] Cannot describe user. It has 0 columns.
+Request URL: /CakeTeaster/user/profile
+Stack Trace:
+#0 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Database/Schema/CachedCollection.php(65): Cake\Database\Schema\Collection->describe('user', Array)
+#1 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/ORM/Table.php(426): Cake\Database\Schema\CachedCollection->describe('user')
+#2 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/ORM/Table.php(502): Cake\ORM\Table->schema()
+#3 /var/www/CakeTeaster/src/Controller/UserController.php(50): Cake\ORM\Table->primaryKey()
+#4 [internal function]: App\Controller\UserController->profile()
+#5 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Controller/Controller.php(411): call_user_func_array(Array, Array)
+#6 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#7 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\UserController))
+#8 /var/www/CakeTeaster/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#9 {main}
+
+
+2015-07-07 11:03:23 Error: [Cake\Database\Exception] Cannot describe user. It has 0 columns.
+Request URL: /CakeTeaster/user/profile
+Stack Trace:
+#0 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Database/Schema/CachedCollection.php(65): Cake\Database\Schema\Collection->describe('user', Array)
+#1 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/ORM/Table.php(426): Cake\Database\Schema\CachedCollection->describe('user')
+#2 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/ORM/Table.php(502): Cake\ORM\Table->schema()
+#3 /var/www/CakeTeaster/src/Controller/UserController.php(50): Cake\ORM\Table->primaryKey()
+#4 [internal function]: App\Controller\UserController->profile()
+#5 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Controller/Controller.php(411): call_user_func_array(Array, Array)
+#6 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#7 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\UserController))
+#8 /var/www/CakeTeaster/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#9 {main}
+
+
+2015-07-07 11:03:37 Error: [Cake\Database\Exception] Cannot describe user. It has 0 columns.
+Request URL: /CakeTeaster/user/profile
+Stack Trace:
+#0 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Database/Schema/CachedCollection.php(65): Cake\Database\Schema\Collection->describe('user', Array)
+#1 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/ORM/Table.php(426): Cake\Database\Schema\CachedCollection->describe('user')
+#2 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/ORM/Table.php(502): Cake\ORM\Table->schema()
+#3 /var/www/CakeTeaster/src/Controller/UserController.php(50): Cake\ORM\Table->primaryKey()
+#4 [internal function]: App\Controller\UserController->profile()
+#5 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Controller/Controller.php(411): call_user_func_array(Array, Array)
+#6 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#7 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\UserController))
+#8 /var/www/CakeTeaster/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#9 {main}
+
+
+2015-07-07 11:04:58 Error: [Cake\Database\Exception] Cannot describe user. It has 0 columns.
+Request URL: /CakeTeaster/user/profile
+Stack Trace:
+#0 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Database/Schema/CachedCollection.php(65): Cake\Database\Schema\Collection->describe('user', Array)
+#1 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/ORM/Table.php(426): Cake\Database\Schema\CachedCollection->describe('user')
+#2 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/ORM/Table.php(502): Cake\ORM\Table->schema()
+#3 /var/www/CakeTeaster/src/Controller/UserController.php(50): Cake\ORM\Table->primaryKey()
+#4 [internal function]: App\Controller\UserController->profile()
+#5 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Controller/Controller.php(411): call_user_func_array(Array, Array)
+#6 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#7 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\UserController))
+#8 /var/www/CakeTeaster/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#9 {main}
+
+
+2015-07-07 11:05:21 Error: [Cake\Database\Exception] Cannot describe user. It has 0 columns.
+Request URL: /CakeTeaster/user/profile
+Stack Trace:
+#0 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Database/Schema/CachedCollection.php(65): Cake\Database\Schema\Collection->describe('user', Array)
+#1 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/ORM/Table.php(426): Cake\Database\Schema\CachedCollection->describe('user')
+#2 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/ORM/Table.php(502): Cake\ORM\Table->schema()
+#3 /var/www/CakeTeaster/src/Controller/UserController.php(50): Cake\ORM\Table->primaryKey()
+#4 [internal function]: App\Controller\UserController->profile()
+#5 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Controller/Controller.php(411): call_user_func_array(Array, Array)
+#6 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#7 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\UserController))
+#8 /var/www/CakeTeaster/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#9 {main}
+
+
+2015-07-07 11:05:42 Error: [Cake\Database\Exception] Cannot describe user. It has 0 columns.
+Request URL: /CakeTeaster/user/profile
+Stack Trace:
+#0 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Database/Schema/CachedCollection.php(65): Cake\Database\Schema\Collection->describe('user', Array)
+#1 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/ORM/Table.php(426): Cake\Database\Schema\CachedCollection->describe('user')
+#2 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/ORM/Table.php(502): Cake\ORM\Table->schema()
+#3 /var/www/CakeTeaster/src/Controller/UserController.php(50): Cake\ORM\Table->primaryKey()
+#4 [internal function]: App\Controller\UserController->profile()
+#5 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Controller/Controller.php(411): call_user_func_array(Array, Array)
+#6 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#7 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\UserController))
+#8 /var/www/CakeTeaster/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#9 {main}
+
+
+2015-07-07 11:08:08 Error: [Cake\Database\Exception] Cannot describe user. It has 0 columns.
+Request URL: /CakeTeaster/user/profile
+Stack Trace:
+#0 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Database/Schema/CachedCollection.php(65): Cake\Database\Schema\Collection->describe('user', Array)
+#1 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/ORM/Table.php(426): Cake\Database\Schema\CachedCollection->describe('user')
+#2 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/ORM/Table.php(502): Cake\ORM\Table->schema()
+#3 /var/www/CakeTeaster/src/Controller/UserController.php(50): Cake\ORM\Table->primaryKey()
+#4 [internal function]: App\Controller\UserController->profile()
+#5 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Controller/Controller.php(411): call_user_func_array(Array, Array)
+#6 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#7 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\UserController))
+#8 /var/www/CakeTeaster/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#9 {main}
+
+
+2015-07-07 11:10:31 Error: [Cake\Database\Exception] Cannot describe user. It has 0 columns.
+Request URL: /CakeTeaster/user/profile
+Stack Trace:
+#0 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Database/Schema/CachedCollection.php(65): Cake\Database\Schema\Collection->describe('user', Array)
+#1 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/ORM/Table.php(426): Cake\Database\Schema\CachedCollection->describe('user')
+#2 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/ORM/Table.php(502): Cake\ORM\Table->schema()
+#3 /var/www/CakeTeaster/src/Controller/UserController.php(50): Cake\ORM\Table->primaryKey()
+#4 [internal function]: App\Controller\UserController->profile()
+#5 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Controller/Controller.php(411): call_user_func_array(Array, Array)
+#6 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#7 /var/www/CakeTeaster/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\UserController))
+#8 /var/www/CakeTeaster/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#9 {main}
+
+
