@@ -11,7 +11,7 @@
         <small><cite title="Source Title">A good developer with good intentions</cite></small>
       </blockquote>
       <p>
-        <i class="icon-envelope"></i> <?= $this->Text->autoParagraph(h($user->email)); ?> <br />
+        <i class="icon-envelope"></i><?= $this->Text->autoParagraph(h($user->email)); ?><br />
         <!-- <i class="icon-globe"></i> www.bootsnipp.com <br> -->
         <!-- <i class="icon-gift"></i> January 30, 1974 -->
         <i class="icon-tasks"></i> &nbsp;<?= __('Creado') ?>:<b><?= h($user->created) ?></b><br />

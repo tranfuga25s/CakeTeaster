@@ -1,24 +1,53 @@
-<div class="actions columns large-2 medium-3">
-    <h3><?= __('Actions') ?></h3>
-    <ul class="side-nav">
-        <li><?= $this->Form->postLink(
-                __('Delete'),
-                ['action' => 'delete', $user->id],
-                ['confirm' => __('Are you sure you want to delete # {0}?', $user->id)]
-            )
-        ?></li>
-        <li><?= $this->Html->link(__('List User'), ['action' => 'index']) ?></li>
-    </ul>
-</div>
-<div class="user form large-10 medium-9 columns">
-    <?= $this->Form->create($user); ?>
-    <fieldset>
-        <legend><?= __('Edit User') ?></legend>
-        <?php
-            echo $this->Form->input('nombre');
-            echo $this->Form->input('email');
-        ?>
-    </fieldset>
-    <?= $this->Form->button(__('Submit')) ?>
-    <?= $this->Form->end() ?>
+<div class="row">
+    <div class="col-lg-9">
+        <?= $this->Form->create($user); ?>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h2><?= __('Edit User') ?></h2>
+            </div>
+            <div class="panel-body">
+                
+                <div class="form-group">
+                    <label class="col-lg-3 control-label"><?= __("Nombre de usuario:"); ?></label>
+                    <div class="col-lg-10">
+                        <?= $this->Form->input('name',['label' => false, 'class' => 'form-control']); ?>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-lg-3 control-label" label-for="email"><?= __("Email:"); ?></label>
+                    <div class="col-lg-10">
+                        <?= $this->Form->input('email',['label' => false, 'class' => 'form-control']); ?>
+                    </div>
+                </div>
+            </div>    
+            <div class="panel-footer">
+                <?= $this->Form->button(__('Submit'), ['class' => 'btn btn-default']); ?>
+            </div>
+        </div>
+        <?= $this->Form->end() ?>
+    </div>
+    
+    <div class="col-lg-3">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="panel panel-default">
+                    <div class="panel-heading"><?= __("Acciones"); ?></div>
+                    <div class="panel-body list-group">
+                        <?php 
+                        echo $this->Form->postLink(
+                                __('Delete'),
+                                ['action' => 'delete', $user->id],
+                                ['confirm' => __('Are you sure you want to delete # {0}?', $user->id), 'class' => 'list-group-item']
+                            );
+                        echo $this->Html->link(__('List User'), ['action' => 'index'], ['class' => 'list-group-item']);
+                        ?>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12">
+                <?= $this->element('publicidad/publicidad_menu'); ?>
+            </div>
+        </div>
+    </div>
+    
 </div>

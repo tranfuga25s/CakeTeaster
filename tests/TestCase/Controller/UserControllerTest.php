@@ -16,7 +16,7 @@ class UserControllerTest extends IntegrationTestCase
      * @var array
      */
     public $fixtures = [
-        'User' => 'app.user'
+        'User' => 'app.users'
     ];
 
     /**

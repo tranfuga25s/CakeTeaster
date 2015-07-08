@@ -2,9 +2,12 @@
 namespace App\Model\Entity;
 
 use Cake\ORM\Entity;
+use Cake\Auth\DefaultPasswordHasher;
 
 /**
- * Users Entity.
+ * Users Entity
+ * 
+ * @author Esteban Zeller <esteban.zeller@gmail.com>
  */
 class User extends Entity
 {
@@ -18,4 +21,5 @@ class User extends Entity
         'name' => true,
         'email' => true,
     ];
+    
 }

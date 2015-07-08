@@ -12,9 +12,9 @@ $this->assign('title', __("Inicio"));
                 <h4><?= __("Menu principal"); ?></h4>
             </div>
             <div class="list-group">
-                <?= $this->Html->link(__("Inicio"), "/", ['class' => 'list-group-item'] ); ?>
-                <?= $this->Html->link(__("Mis proyectos"), ['controller' => 'project'], ['class' => 'list-group-item'] ); ?>
-                <?= $this->Html->link(__("Todos los proyectos"), "/", ['class' => 'list-group-item'] ); ?>
+                <?= $this->Html->link($this->Html->tag('i','', ['class' => 'glyphicon glyphicon-home'])."&nbsp;".__("Inicio"), "/", ['class' => 'list-group-item', 'escape' => false] ); ?>
+                <?= $this->Html->link($this->Html->tag('i','', ['class' => 'glyphicon glyphicon-briefcase'])."&nbsp;".__("Mis proyectos"), ['controller' => 'project'], ['class' => 'list-group-item', 'escape' => false]); ?>
+                <?= $this->Html->link($this->Html->tag('i','', ['class' => 'glyphicon glyphicon-menu-hamburger'])."&nbsp;".__("Todos los proyectos"), ['controller' => 'project', 'action' => 'all'], ['class' => 'list-group-item', 'escape' => false] ); ?>
             </div>
         </div>
         <?= $this->element('publicidad/publicidad_menu'); ?>

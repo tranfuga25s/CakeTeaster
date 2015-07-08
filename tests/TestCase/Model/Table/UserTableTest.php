@@ -7,6 +7,8 @@ use Cake\TestSuite\TestCase;
 
 /**
  * App\Model\Table\UserTable Test Case
+ * 
+ * @property App\Model\Table\UserTable $User
  */
 class UserTableTest extends TestCase
 {
@@ -17,7 +19,7 @@ class UserTableTest extends TestCase
      * @var array
      */
     public $fixtures = [
-        'User' => 'app.user'
+        'User' => 'app.users'
     ];
 
     /**
@@ -51,7 +53,10 @@ class UserTableTest extends TestCase
      */
     public function testInitialize()
     {
-        $this->markTestIncomplete('Not implemented yet.');
+        $this->User->initialize(array());
+        $this->assertEquals('users', $this->User->table(), "The primary key does not coincide");
+        $this->assertEquals('id', $this->User->primaryKey(), "The primary is setted incorrectly");
+        $this->assertEquals('name', $this->User->displayField(), "The display field is not the adecuate");
     }
 
     /**
@@ -69,8 +74,21 @@ class UserTableTest extends TestCase
      *
      * @return void
      */
-    public function testBuildRules()
+    public function testValidations()
     {
-        $this->markTestIncomplete('Not implemented yet.');
+        $entity = $this->User->newEntity();
+        
+        // Null email
+        $entity->set('email', null);
+        $this->assertFalse($this->User->save($entity));
+        
+        // Repeated email
+        $entity->set('email', 'esteban.zeller+test@gmail.com');
+        $this->assertFalse($this->User->rulesChecker()->checkCreate($entity));
+        
+        // Correct Email
+        $entity->set('email', 'esteban.zeller+test2@gmail.com');
+        $this->assertTrue($this->User->rulesChecker()->checkCreate($entity));
     }
+    
 }

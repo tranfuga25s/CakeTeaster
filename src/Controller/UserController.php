@@ -6,7 +6,7 @@ use App\Controller\AppController;
 /**
  * User Controller
  *
- * @property \App\Model\Table\UsersTable $Users
+ * @property \App\Model\Table\UserTable $User
  */
 class UserController extends AppController
 {
@@ -18,7 +18,7 @@ class UserController extends AppController
      */
     public function index()
     {
-        $this->set('user', $this->paginate($this->Users));
+        $this->set('user', $this->paginate($this->User));
         $this->set('_serialize', ['user']);
     }
 
@@ -31,7 +31,7 @@ class UserController extends AppController
      */
     public function view($id = null)
     {
-        $user = $this->Users->get($id, [
+        $user = $this->User->get($id, [
             'contain' => []
         ]);
         $this->set('user', $user);

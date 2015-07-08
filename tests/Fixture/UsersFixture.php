@@ -7,7 +7,7 @@ use Cake\TestSuite\Fixture\TestFixture;
  * UserFixture
  *
  */
-class UserFixture extends TestFixture
+class UsersFixture extends TestFixture
 {
 
     /**
@@ -15,7 +15,7 @@ class UserFixture extends TestFixture
      *
      * @var string
      */
-    public $table = 'user';
+    public $table = 'users';
 
     /**
      * Fields
@@ -46,8 +46,8 @@ class UserFixture extends TestFixture
     public $records = [
         [
             'id' => 1,
-            'nombre' => 'Lorem ipsum dolor sit amet, aliquet feugiat. Convallis morbi fringilla gravida, phasellus feugiat dapibus velit nunc, pulvinar eget sollicitudin venenatis cum nullam, vivamus ut a sed, mollitia lectus. Nulla vestibulum massa neque ut et, id hendrerit sit, feugiat in taciti enim proin nibh, tempor dignissim, rhoncus duis vestibulum nunc mattis convallis.',
-            'email' => 'Lorem ipsum dolor sit amet, aliquet feugiat. Convallis morbi fringilla gravida, phasellus feugiat dapibus velit nunc, pulvinar eget sollicitudin venenatis cum nullam, vivamus ut a sed, mollitia lectus. Nulla vestibulum massa neque ut et, id hendrerit sit, feugiat in taciti enim proin nibh, tempor dignissim, rhoncus duis vestibulum nunc mattis convallis.',
+            'nombre' => 'tranfuga25s',
+            'email' => 'esteban.zeller+test@gmail.com',
             'created' => '2015-04-02 18:00:25',
             'modified' => '2015-04-02 18:00:25'
         ],
